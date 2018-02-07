@@ -438,6 +438,7 @@
         }
       }
     &.title-row{
+      grid-gap: 1rem;
       .eight{
         &:nth-child(8n+2) {
           grid-column-start: 2;
