@@ -37,9 +37,9 @@ layout: home
 <div class="one">
 
 ### The Accelerator Program
-Autem quidem repellendus explicabo itaque accusantium. Est aut ullam voluptatem omnis in rem. Qui perspiciatis ut nobis maxime eligendi similique. Non culpa voluptatem enim nostrum et et.
+Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
 
-[Start Ups]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+[Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
 
 
 </div>

@@ -670,7 +670,7 @@ article {
     .one {
       padding: 4rem 0 4rem 0;
       grid-column-start: 2;
-      grid-column-end: 12;
+      grid-column-end: 11;
       z-index: 30;
       position: relative;
       @media only screen and (max-width: 1400px) {
@@ -865,9 +865,9 @@ nav {
     // }
     li.active {
       text-decoration: underline;
-      color: $brand-ten;
+      color: $brand-seven;
       a {
-        color: $brand-ten;
+        color: $brand-seven;
       }
     }
   }
