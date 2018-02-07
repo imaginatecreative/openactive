@@ -124,14 +124,14 @@ $(document).ready(function () {
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
         });
-        //auto-rotate every 5 seconds
-        setInterval(function () {
-            //get currently-on tab
-            var onTab = tabsHero.filter('.current');
-            //click either next tab, if exists, else first one
-            var nextTab = onTab.index() < tabsHero.length - 1 ? onTab.next() : tabsHero.first();
-            nextTab.click();
-        }, 5000);
+        // //auto-rotate every 5 seconds
+        // setInterval(function () {
+        //     //get currently-on tab
+        //     var onTab = tabsHero.filter('.current');
+        //     //click either next tab, if exists, else first one
+        //     var nextTab = onTab.index() < tabsHero.length - 1 ? onTab.next() : tabsHero.first();
+        //     nextTab.click();
+        // }, 5000);
 
 
         //CASE STUDIES
@@ -182,7 +182,7 @@ $(document).ready(function () {
             //click either next tab, if exists, else first one
             var nextTab = onTab.index() < tabs.length - 1 ? onTab.next() : tabs.first();
             nextTab.click();
-        }, 5000);
+        }, 8000);
 
 
         //TABS

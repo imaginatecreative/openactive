@@ -8,30 +8,6 @@ layout: home
 
 {::options parse_block_html="true" /}
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-
-##### Page Notes ~ {{ page.title | escape }}
-Content for this page is detailed in the
-[Google Doc](https://drive.google.com/open?id=1pSzce8tiNHg8eMKUop4FozaJkhGAXNXYpLSANFf-0Z0){:target="_blank"}
-
-</div>
-</article>
-
-
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes ~ Hero Block
-**Purpose**: This section is the first thing all users will see, we are showcasing the video along with key benefits. The benefits should appeal to all levels of users
-
-**Functionality**: A video is embedded from youtube
-
-**Design**:
-
-**Copy-writing Notes**:
-</div>
-</article>
-
 
 <article class="hero--home">
 <nav class="hero_tab_nav">
@@ -39,13 +15,12 @@ Content for this page is detailed in the
 <div class="hero-tab" data-tab="h2"></div>
 <div class="hero-tab" data-tab="h3"></div>
 </nav>
-<div>
-<h1>Welcome to OpenActive</h1>
+<div class="content">
+<h1>Help give physical activity unlimited reach</h1>
 <ul class="hero_tab_content">
-<li class="hero-content" id="h1"><p>Improve our nation’s physical health, and harness open data to enhance the  sport and physical  sector’s performance.</p></li>
-<li class="hero-content" id="h2"><p>Reach out to people across the country and help your activities gain visibility.</p></li>
-<li class="hero-content" id="h3"><p>Innovate with open data and make finding new ways to get active even easier
-</p></li>
+<li class="hero-content" id="h1"><p>Improve our nation’s physical health</p></li>
+<li class="hero-content" id="h2"><p>Fill spaces in your activities</p></li>
+<li class="hero-content" id="h3"><p>Innovate to help people get active</p></li>
 </ul>
 [How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary--alt}
 </div>
@@ -56,32 +31,35 @@ Content for this page is detailed in the
 </article>
 
 
+
+<article class="call_to_action--full-width startup">
+<h2 class="sub-heading-two">Join</h2>
+<div class="one">
+
+### The Accelerator Program
+Autem quidem repellendus explicabo itaque accusantium. Est aut ullam voluptatem omnis in rem. Qui perspiciatis ut nobis maxime eligendi similique. Non culpa voluptatem enim nostrum et et.
+
+[Start Ups]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+
+
+</div>
+
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
+<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+</figure>
+
+</article>
+
 {% include case-study.html %}
 
 
 
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes ~ Tabbed Content
-**Purpose**: These tabs are used to help guide users based on their orientation toward initiative, The first tab would be geared toward a general explanation, whereas the other tabs would be aimed at providing a insight into other specific use cases, such as using or sharing data. Each item will provide a call action to encourage users further along the path.
-
-**Functionality**: The the content will be housed in a tabbing system, and the active tab could be changed to suite phases of the initiative.
-
-**Design**: The design should be lead by established web conventions, this will aid users when interpreting the content.
-
-**Copy-writing Notes**:
-</div>
-</article>
-
-
-
 <article markdown="0" class="tabs blue">
-
 <h2 class="sub-heading-two">Where to start?</h2>
-
 <div  id="tabs">
-
 <div  class="tabsList " role="tablist" >
 
 
@@ -179,18 +157,6 @@ aria-labelledby="activity-provider">
 </article>
 
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes ~ CTA Blocks Small
-**Purpose**: This section is used to direct users around the site
-
-**Functionality**: These blocks will contain at minimum title, excerpt & button.
-
-**Design**: These represent call to action blocks at a lower hierarchy, the design should reflect this. For example these would be a lower level of prominence than a full with call to action.
-
-**Copy-writing Notes**:
-</div>
-</article>
 
 
 <article class="call_to_action title-row">
@@ -221,24 +187,10 @@ What's happening in the community, and how you can get involved!
 
 [Community]( {{ site.baseurl }}{% link community.md %}){: .button-primary}
 
-
 </div>
 </div>
-
 </article>
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes
-**Purpose**: The purpose of this section is to graphically clarify for users exactly what open data is
-
-**Functionality**: This section will support text and graphics.
-
-**Design**: This is a opportunity to animate graphics to create visual intrigue.
-
-**Copy-writing Notes**: Reinforcing link with the ODI and open data as a whole, some users may not be aware of it's pervasiveness and the network behind OA
-</div>
-</article>
 
 <article class="title-row">
 <h2 class="sub-heading-two"> What is <br>Open Data?</h2>
@@ -258,50 +210,10 @@ What's happening in the community, and how you can get involved!
 
 </article>
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes ~ CTA Block Large
-**Purpose**: This section is used to direct users to specific pages. In this case to promote the accelerator program
-
-**Functionality**: This full width call to action section will provide a title, excerpt and button.
-
-**Design**: This represents a call to action blocks at a higher hierarchy, the design should reflect this. For example these full width call to action's would have a higher prominence than smaller ones, but take design cues.
-
-**Copy-writing Notes**:
-</div>
-</article>
-
-<article class="call_to_action--full-width startup">
-<h2 class="sub-heading-two">Join</h2>
-<div class="one">
-
-### The Accelerator Program
-Autem quidem repellendus explicabo itaque accusantium. Est aut ullam voluptatem omnis in rem. Qui perspiciatis ut nobis maxime eligendi similique. Non culpa voluptatem enim nostrum et et.
-
-[Start Ups]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
 
 
-</div>
-
-<figure>
-<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-</figure>
-
-</article>
 
 
-<article class="note-wrap" aria-hidden="true">
-<div class="notes">
-##### Section Notes
-**Purpose**: This section will expose some latest blog posts for users to quickly gain a insight into recent activity.
-
-**Functionality**: Each contain article block will support a title, excerpt, author, post date and thumbnail.
-
-**Design**: The design should be lead by established web conventions with regards to article lists so users are able to easily interpret content they are seeing.
-
-**Copy-writing Notes**:
-</div>
-</article>
 
 
 <article class="post-list title-row">
