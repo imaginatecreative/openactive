@@ -3,9 +3,9 @@ title: Community
 permalink: "/community/"
 position: 5
 is_main_navigation: true
-layout: page-hero
-thumbnail_image: "/uploads/sideplank.jpg"
+thumbnail_image: "/uploads/iStock-501777666_optimised.png"
 strapline: Innovation through Collaboration
+layout: page-hero
 ---
 
 {::options parse_block_html="true" /}
