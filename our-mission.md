@@ -8,32 +8,6 @@ layout: page-headless
 
 {::options parse_block_html="true" /}
 
-<article class="note-wrap">
-<div class="notes">
-
-##### Page Notes ~ {{ page.title | escape }}
-Content for this page is detailed in the
-[Google Doc](https://drive.google.com/open?id=1cOIWKH_yIbYhG7pzKTe31shjfqSgBU5JlKRZrqUazug){:target="_blank"}
-
-</div>
-</article>
-
-<article class="note-wrap">
-<div class="notes">
-
-##### Section Notes ~ Hero Block
-**Purpose**:  
-
-**Functionality**:
-
-**Design**:
-
-**Copy-writing Notes**:
-
-</div>
-</article>
-
-
 <article markdown="0" class="hero--simple">
 <i class="line-graphic">{% include slim-line-graphic.svg %}</i>
 <div class="one">
@@ -48,6 +22,7 @@ Content for this page is detailed in the
 
 ### Our Mission
 From leisure operators and local sports clubs, to National Governing Bodies and event providers, we work with organisations to open up data about physical activity opportunities for anyone to access, use and share.
+
 Our aim is to use data to help people get active and stimulate sector growth.
 By harnessing open data – that anyone can access, use and share – we are helping people around the country to discover and take part in new activities more easily than ever before and enhancing the sector’s engagement and reach.
 </div>
@@ -55,12 +30,12 @@ By harnessing open data – that anyone can access, use and share – we are hel
 
 
 <article class="title-row">
-<h2 class="sub-heading-two">What Is Open Active?</h2>
+<h2 class="sub-heading-two">What Is OpenActive?</h2>
 
 <div class="two ">
 
 ### What’s the problem?
-A lack of physical activity is one of Britain’s biggest public health challenges, causing 37,000 deaths annually and costing £20BN a year. 
+A lack of physical activity is one of Britain’s biggest public health challenges, [causing 37,000 deaths](http://www. apho.org.uk/resource/view.aspx?RID=123459) annually and costing [£20BN](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/279657/moving_living_more_inspired_2012.pdf) a year. 
 Our daily lives are immersed in data-enabled services that allow seamless experiences with planning travels, managing finances, and booking leisure activities. We want to achieve the same with physical activity.
 
 Making physical activity opportunities easier to discover and take part in requires improving access to information online and offline. Although information about physical activities is public, a gym might publish sessions on its website, a yoga studio might prefer flyers and a bootcamp could share its timetable on social media. For someone looking for local activities it quickly becomes a minefield, not to mention how hard it can be to maintain and share this information.
