@@ -30,7 +30,7 @@ layout: home
 </figure>
 </article>
 
-
+{% include case-study.html %}
 
 <article class="call_to_action--full-width startup">
 <h2 class="sub-heading-two">Join</h2>
@@ -52,7 +52,7 @@ Millions find it hard to stay active. OpenActive Accelerator calls for startups 
 
 </article>
 
-{% include case-study.html %}
+
 
 
 
@@ -195,13 +195,14 @@ What's happening in the community, and how you can get involved!
 <article class="title-row">
 <h2 class="sub-heading-two"> What is <br>Open Data?</h2>
 <div class="one">
-<h3>Corporis sint</h3>
-<p class="reset-style">Molestiae similique numquam quia dolore quod ut temporibus sit. Maiores vel nostrum ut est. Voluptas assumenda qui veritatis quisquam. Qui adipisci dolores perferendis mollitia eligendi error aut laboriosam. Consequatur sequi sequi facilis reiciendis in rerum enim.</p>
+<h3>What is the definition?</h3>
+<p class="reset-style">
+Open data is data that anyone can access, use or share. Simple as that. When big companies or governments release non-personal data, it enables small businesses, citizens and medical researchers to develop resources which make crucial improvements to their communities.</p>
 <p></p>
 </div>
 <div class="one">
 
-![what_open_data.png](/uploads/what_open_data.png)
+![what_open_data.png]({{ site.baseurl }}/uploads/what_open_data.png)
 
 
 
