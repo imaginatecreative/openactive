@@ -201,7 +201,7 @@ What's happening in the community, and how you can get involved!
 </div>
 <div class="one">
 
-{% include blank.svg %}
+![what_open_data.png](/uploads/what_open_data.png)
 
 
 
