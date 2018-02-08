@@ -165,6 +165,11 @@ $globalEight: $brand-eight;
     border-color: $globalFive;
     color: $globalFive;
   }
+  a.button-primary--ghostlarge{
+    background-color: transparent;
+    border-color: $globalFive;
+    color: $globalFive;
+  }
   .button-secondary {
     background-color: $globalFour;
     &:hover{
@@ -205,7 +210,30 @@ $globalEight: $brand-eight;
   .featured{
     background-color: $globalFive;
   }
+  .invert{
+    background-color: $globalFive;
+    padding: 3rem 0 2rem 0;
+    .sub-heading-two {
+      color: $white;
+    }
+    svg{
+      path{
+        fill:$white;
+      }
+    }
+    * {
+      color: $white;
+    }
+    a.button-primary{
+      background-color: $globalSix;
+    }
+    a.button-primary--ghost{
+      background-color: transparent;
+      border-color: white;
+      color: white;
 
+    }
+  }
 }
 
 .global, .global-template {
@@ -377,6 +405,21 @@ article.use, div.use {
   .featured{
     background-color: $usingFive;
   }
+  .invert{
+    background-color: $usingFour;
+    padding: 3rem 0 2rem 0;
+    .sub-heading-two {
+      color: $white;
+    }
+    svg{
+      path{
+        fill:$white;
+      }
+    }
+    * {
+      color: $white;
+    }
+  }
 }
 
 .use-colours {
@@ -541,6 +584,21 @@ article.publish, div.publish {
   }
   .featured{
     background-color: $publishThree;
+  }
+  .invert{
+    background-color: $publishFour;
+    padding: 3rem 0;
+    .sub-heading-two {
+      color: $white;
+    }
+    svg{
+      path{
+        fill:$white;
+      }
+    }
+    * {
+      color: $white;
+    }
   }
 }
 
@@ -724,6 +782,21 @@ article.startup, div.startup, a.button-primary.startup {
   .featured{
     background-color: $startUpThree;
   }
+  .invert{
+    background-color: $startUpThree;
+    padding: 2rem 0;
+    .sub-heading-two {
+      color: $white;
+    }
+    svg{
+      path{
+        fill:$white;
+      }
+    }
+    * {
+      color: $white;
+    }
+  }
 
 }
 
@@ -817,7 +890,7 @@ $border-color: #DADADA;
 }
 
 //UTILITY CLASSES
-//BRAND BACKGROUND COLOUR
+//****************************BRAND BACKGROUND COLOUR
 .brand-one-bc {
   background-color: $brand-one;
   * {
@@ -937,8 +1010,33 @@ $border-color: #DADADA;
     }
   }
 }
+//****************************BRAND COLOUR
+.brand-one-c{
+  color: $brand-one;
+}
+.brand-two-c{
+  color: $brand-two;
+}
+.brand-three-c{
+  color: $brand-three;
+}
+.brand-four-c{
+  color: $brand-four;
+}
+.brand-five-c{
+  color: $brand-five;
+}
+.brand-six-c{
+  color: $brand-six;
+}
+.brand-seven-c{
+  color: $brand-seven;
+}
+.brand-eight-c{
+  color: $brand-eight;
+}
 
-//BRAND BORDER COLOUR
+//****************************BRAND BORDER COLOUR
 .brand-one-b {
   border-color: $brand-one;
   &.four {

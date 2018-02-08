@@ -230,7 +230,7 @@ article {
   &.hero--large{
     background-blend-mode: multiply;
     .two{
-      min-height: 250px;
+      min-height: 300px;
       padding: 2rem 0;
       display: inline-flex;
       flex-direction: column;
@@ -240,6 +240,10 @@ article {
       }
       *{
         color:$white;
+      }
+      h6{
+        margin-top: 1rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -1190,6 +1194,13 @@ nav {
   top: 18px;
   width: 0;
   left: 50%;
+}
+
+.slidingDiv {
+  height:auto;
+}
+.show_hide {
+  display:inline-block;
 }
 
 // .slidingDiv {

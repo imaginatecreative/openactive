@@ -329,6 +329,8 @@ blockquote {
     padding-left: 2rem;
     font-style: normal;
     border-left: 1px solid;
+    font-size: $header-size/  2.16346;
+    font-family: $font-family;
   }
   &.featured{
     padding:2rem;
@@ -403,6 +405,8 @@ article.featured {
       grid-column-end: 14;
       border-left: none;
       color: $white;
+      font-size: $header-size/  2.16346;
+      font-family: $font-family;
     }
     h6 {
       color: $white;
