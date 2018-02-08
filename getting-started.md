@@ -106,24 +106,12 @@ Search our list of OpenActive enabled system, to find the activity providers alr
 </article>
 
 
-<article class="note-wrap">
-<div class="notes">
 
-##### Section Notes ~ CTA Block
-**Purpose**: A section aimed at developers who want to engage with the documentation and specifications
-
-**Functionality**:
-
-**Design**:
-
-**Copy-writing Notes**:
-
-</div>
-</article>
-
-<article class="call_to_action--full-width brand-ten-bc">
+<article markdown="0" class="call_to_action--full-width">
 <h2 class="sub-heading-two">Show me the code</h2>
-<div class="one">
+<i class="line-graphic">{% include slim-line-graphic.svg %}</i>
+
+<div markdown="1" class="one">
 
 ### For Developers
 Join the open data revolution with OpenActive and help the nation get active. 
@@ -131,8 +119,10 @@ Join the open data revolution with OpenActive and help the nation get active.
 [Developer]( {{ site.baseurl }}{% link developer.md %}){: .button-primary}
 
 </div>
-<figure class="brand-nine-bc">
-<div style="background: url({{ site.url }}/openactive/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
+<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
 </figure>
 </article>
 

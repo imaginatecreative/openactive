@@ -410,10 +410,12 @@ html.no-cssgrid {
             }
           }
         }
-        .button--primary, .button-primary--alt {
+        .button-primary {
           text-align: center;
           width: auto;
-          margin-top: 1rem;
+          &:nth-child(1){
+            margin: 0 0 1rem 0;
+          }
         }
       }
     }
