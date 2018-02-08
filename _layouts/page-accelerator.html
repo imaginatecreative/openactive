@@ -4,48 +4,60 @@ layout: default
 
 <div class="page startup-template">
 
-    <article markdown="0" class="hero--montage">
-        <i class="line-graphic">{% include slim-line-graphic.svg %}</i>
-        <div>
+    <!--<article markdown="0" class="hero&#45;&#45;montage">-->
+        <!--<i class="line-graphic">{% include slim-line-graphic.svg %}</i>-->
+        <!--<div>-->
+            <!--<h1>{{page.title}}</h1>-->
+            <!--<p>{{page.strapline}}</p>-->
+        <!--</div>-->
+        <!--<figure class="hero">-->
+            <!--<div class="stripe"></div>-->
+            <!--<div class="triangle"></div>-->
+            <!--<div style="background: url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;"></div>-->
+        <!--</figure>-->
+        <!--<figure class="sub-menu">-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+        <!--</figure>-->
+    <!--</article>-->
+
+    <article class="hero--thin">
+        <div class="one" style="background: linear-gradient(to right, #2b2b2b 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;">
             <h1>{{page.title}}</h1>
             <p>{{page.strapline}}</p>
+            <p><a class="button-primary" href="#">Sign Up</a>&nbsp;<a class="button-primary--ghost" href="#">View Timeline</a></p>
         </div>
-        <figure class="hero">
-            <div class="stripe"></div>
-            <div class="triangle"></div>
-            <div style="background: url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;"></div>
-        </figure>
-        <figure class="sub-menu">
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-        </figure>
     </article>
 
 
-
     <article>
+        <div class="two">
+            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
+                on many aspects of people’s
+                lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
+            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong>
+                often don’t offer
+                the seamless experiences we are used to in industries like travel or entertainment.
+                <strong>Information</strong>
+                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens
+                between the
+                different stakeholders in the ecosystem, such as gyms and sport clubs.</p>
+        </div>
         <div class="two">
             <blockquote class="featured ">
                 <i class="quote">
                     {% include quote.svg %}
                 </i>
-                <p>6.2 million adults are fairly active but don’t exercise enough to improve their health and wellbeing.</p>
+                <p>6.2 million adults are fairly active but don’t exercise enough to improve their health and
+                    wellbeing.</p>
                 <h6>Sport England</h6>
-                <h6><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf" target="_blank">Active Lives Survey - 16/17</a></h6>
+                <h6><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf"
+                       target="_blank">Active Lives Survey - 16/17</a></h6>
             </blockquote>
         </div>
-        <div class="two">
-            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact on many aspects of people’s
-                lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
-            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong> often don’t offer
-                the seamless experiences we are used to in industries like travel or entertainment. <strong>Information</strong>
-                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens between the
-                different stakeholders in the ecosystem, such as gyms and sport clubs.</p>        </div>
     </article>
-
-
 
 
     <article class="call_to_action--full-width">
@@ -53,9 +65,10 @@ layout: default
         <div class="one">
 
             <h3> The Accelerator Program</h3>
-            <p>Join the ODI&rsquo;s OpenActive Accelerator, and be part of a unique opportunity to challenge the status quo with new innovation, and help more people <strong>get active</strong> using open data.</p>
+            <p>Join the ODI&rsquo;s OpenActive Accelerator, and be part of a unique opportunity to challenge the status
+                quo with new innovation, and help more people <strong>get active</strong> using open data.</p>
             <br/>
-            <a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Sign Up</a>
+            <a class="button-primary" href="">Sign Up</a>
 
 
         </div>
@@ -138,7 +151,8 @@ layout: default
                 <figure>
                     {% include demo.svg %}
                     <strong>Demo Day</strong>
-                    <figcaption>Demonstrate your products and services at an invite-only pitch to investors.</figcaption>
+                    <figcaption>Demonstrate your products and services at an invite-only pitch to investors.
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -150,61 +164,71 @@ layout: default
 
         </div>
     </article> -->
-    <article>
-            <div class="one">
-                <blockquote class="featured ">
-                    <i class="quote">
-                        {% include quote.svg %}
-                    </i>
-                    <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build a product that consistently "wows" the householders that use our platform and helps them live more happily together.</p>
-                    <h6>Nick Katz</h6>
-                    <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
-                </blockquote>
-            </div>
 
-    <article class="title-row">
+    <article>
+        <div class="one">
+            <blockquote class="featured ">
+                <i class="quote">
+                    {% include quote.svg %}
+                </i>
+                <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build
+                    a product that consistently "wows" the householders that use our platform and helps them live more
+                    happily together.</p>
+                <h6>Nick Katz</h6>
+                <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
+            </blockquote>
+        </div>
+    </article>
+    <article class="title-row experience">
         <h2 class="sub-heading-two">Our experience supporting startups</h2>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>5 Years</figcaption>
+                {% include years.svg %}
+                <strong>5</strong>
+                <figcaption>Years</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>124 startups</figcaption>
+                {% include startup.svg %}
+                <strong>124</strong>
+                <figcaption>startups</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>24 countries worldwide</figcaption>
+                {% include world.svg %}
+                <strong>24</strong>
+                <figcaption>countries worldwide</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>23 cohorts</figcaption>
+                {% include cohorts.svg %}
+                <strong>23</strong>
+                <figcaption>cohorts</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>£30m investment raised</figcaption>
+                {% include investment.svg %}
+                <strong>£30m</strong>
+                <figcaption>investment raised</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>400 jobs</figcaption>
+                {% include jobs.svg %}
+                <strong>400</strong>
+                <figcaption>jobs</figcaption>
             </figure>
         </div>
     </article>
 
     <article class="title-row">
         <div class="one">
-            <p>From fighting pollution using Artificial Intelligence to allowing developers to build transport solutions to helping clients
+            <p>From fighting pollution using Artificial Intelligence to allowing developers to build transport solutions
+                to helping clients
                 bring traceability to their products and processing big data to drive better decision making, past
                 <strong>ODI startup alumni are passionate and diverse.</strong></p>
             <p>This diversity makes for a <strong>powerful peer-to-peer network</strong> and offers valuable
@@ -220,36 +244,35 @@ layout: default
 
         <div class="four">
 
-                <figure>
-                    <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
-                    <figcaption>{{ post.title | escape }}</figcaption>
-                </figure>
-               {% if post.twitter %} 
-                                    <a target="_blank" rel="noopener" href="{{ post.twitter }}">
+            <figure>
+                <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
+                <figcaption>{{ post.title | escape }}</figcaption>
+            </figure>
+            {% if post.twitter %}
+            <a target="_blank" rel="noopener" href="{{ post.twitter }}">
                                         <span class="icon icon--twitter">
                                             {% include twitter.svg %}
                                         </span>
-                                        <span class="hidden" aria-hidden="true">
+                <span class="hidden" aria-hidden="true">
                                             Twitter
                                         </span>
-                                    </a>
-                {% endif %}
-                {% if post.linkedin %}
-                                    <a href="{{ post.linkedin }}" target="_blank">
+            </a>
+            {% endif %}
+            {% if post.linkedin %}
+            <a href="{{ post.linkedin }}" target="_blank">
                                         <span class="icon icon--twitter">
                                             {% include linkedin.svg %}
                                         </span>
-                                        <span class="hidden" aria-hidden="true">
+                <span class="hidden" aria-hidden="true">
                                             LinkedIn
                                         </span>
-                                    </a>
-                {% endif %}
+            </a>
+            {% endif %}
         </div>
-        
-  
-        
+
+
         {% endfor %}
- 
+
     </article>
     <hr/>
 
@@ -262,7 +285,7 @@ layout: default
 
         <div class="four">
             <figure>
-                    <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
+                <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
             </figure>
         </div>
 
@@ -300,13 +323,14 @@ layout: default
         </div>
     </article>
     <article class="title-row">
-            <h2 class="sub-heading-two">Are You Eligible?</h2>
-            <div class="one">
-                    <p>To apply you need to fulfill certain requirements, find out if you are eligible.</p>
-                    <p><a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a></p>
-  
-            </div>
-        </article>
+        <h2 class="sub-heading-two">Are You Eligible?</h2>
+        <div class="one">
+            <p>To apply you need to fulfill certain requirements, find out if you are eligible.</p>
+            <p><a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a>
+            </p>
+
+        </div>
+    </article>
 
     <article class="call_to_action">
         <div class="subgrid">
@@ -316,7 +340,9 @@ layout: default
             </div>
             <div class="three purple-gradient-bc">
                 <h4>Become a mentor </h4>
-                <a class="button-primary" href="https://docs.google.com/forms/d/1rv50zCN17njsYrAG2YBlHqqSpVeHCJmp0NpN87AGBiQ/edit" target="_blank" >Sign Up</a>
+                <a class="button-primary"
+                   href="https://docs.google.com/forms/d/1rv50zCN17njsYrAG2YBlHqqSpVeHCJmp0NpN87AGBiQ/edit"
+                   target="_blank">Sign Up</a>
             </div>
             <div class="three red-gradient-bc ">
                 <h4>Join as a partner</h4>
@@ -325,14 +351,42 @@ layout: default
         </div>
     </article>
 
-    <article class="title-row">
-            <h2 class="sub-heading-two">More questions?</h2>
-            <div class="one">
-                    <p>If you have general queries about the Accelerator have a look through our FAQs or <a href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get in touch.</a></a></p>
-                    <p><a class="button-primary" href="{{ site.baseurl }}{% link faqs.md %}">Visit our FAQs</a></p>
-  
+
+    <article class="title-row collapse-bottom">
+        <h2 class="sub-heading-two">More questions?</h2>
+        <div class="one">
+            <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>
+        </div>
+    </article>
+    <article class="faq-snippet">
+        <div class="two">
+            <div class="news-content">
+                {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
+                {% for post in aboutAccelerator limit:3 %}
+                <div class="one">
+                    <h5>Q: {{ post.title | escape}}</h5>
+                    <p class="post-snippet">{{post.content}}</p>
+                </div>
+                {% endfor %}
             </div>
-        </article>
+        </div>
+        <div class="two">
+            <div class="news-content">
+                {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
+                {% for post in aboutAccelerator limit:2 offset:3 %}
+                <div class="one">
+                    <h5>Q: {{ post.title | escape}}</h5>
+                    <p class="post-snippet">{{post.content}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="one">
+            <p><a class="button-primary--ghost" href="{{ site.baseurl }}{% link faqs.md %}">Visit
+                our FAQs</a>&nbsp;<a class="button-primary" href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get
+                in touch.</a></p>
+        </div>
+    </article>
 
 
     {{ content }}

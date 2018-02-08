@@ -18,7 +18,7 @@
     .one {
       grid-column-start: 2;
       grid-column-end: 14;
-      transition-property: background-color;
+      transition-property: all;
       transition-duration: 0.2s;
       transition-timing-function: ease-in-out;
       &.non-grid{
@@ -47,12 +47,20 @@
             margin-left: 1%;
             margin-right: 0;
           }
+          @media only screen and (max-width: 1100px) {
+            width:17%;
+
+          }
+          @media only screen and (max-width: 900px) {
+            width:16%;
+
+          }
         }
       }
       &.large{
         grid-column-start: 1;
         grid-column-end: -1;
-        transition-property: background-color;
+        transition-property: all;
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
       }
@@ -488,6 +496,9 @@
     }
     figure{
       margin: 0;
+    }
+    &.collapse-bottom{
+      margin-bottom: 0;
     }
   }
   div.subgrid, nav.subgrid {

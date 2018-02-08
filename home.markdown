@@ -32,31 +32,6 @@ layout: home
 
 {% include case-study.html %}
 
-<article class="call_to_action--full-width startup">
-<h2 class="sub-heading-two">Join</h2>
-<div class="one">
-
-### The Accelerator Programme
-Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
-
-<p><a href="{{ site.baseurl }}{% link accelerator.md %}" class="button-primary" onclick="gtag('event', 'primary ctas', {'homepage': 'clicked', 'event_label': 'accelerator cta'});">Find out more</a></p>
-
-
-
-</div>
-
-<figure>
-<div class="triangle"></div>
-<div class="stripe"></div>
-<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-</figure>
-
-</article>
-
-
-
-
-
 
 <article markdown="0" class="tabs blue">
 <h2 class="sub-heading-two">Where to start?</h2>
@@ -214,7 +189,25 @@ Open data is data that anyone can access, use or share. Simple as that. When big
 
 
 
+<article class="call_to_action--full-width startup">
+<h2 class="sub-heading-two">Start Ups</h2>
+<div class="one">
 
+### The Accelerator Programme
+Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
+
+[Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+
+
+</div>
+
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
+<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+</figure>
+
+</article>
 
 
 
@@ -237,7 +230,9 @@ Open data is data that anyone can access, use or share. Simple as that. When big
 
 <div class="two twoleft">
 {% include share-page.html %}
-{{post.date}}
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+{{post.date | date: date_format}}
 {{post.author}}
 </div>
 </div>
