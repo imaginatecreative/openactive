@@ -254,7 +254,7 @@ layout: default
     <hr/>
 
     <article class="title-row">
-        <h2 class="sub-heading-two">Partners</h2>
+        <h2 class="sub-heading-two">Supporters and data providers</h2>
 
         {% assign sortedPosts = site.partners | sort: 'title' %}
         {% for post in sortedPosts %}
@@ -302,8 +302,8 @@ layout: default
     <article class="title-row">
             <h2 class="sub-heading-two">Are You Eligible?</h2>
             <div class="one">
-                    To apply you need to fulfill certain requirements, find out if you are eligible.
-                    <a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a>
+                    <p>To apply you need to fulfill certain requirements, find out if you are eligible.</p>
+                    <p><a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a></p>
   
             </div>
         </article>
@@ -324,6 +324,15 @@ layout: default
             </div>
         </div>
     </article>
+
+    <article class="title-row">
+            <h2 class="sub-heading-two">More questions?</h2>
+            <div class="one">
+                    <p>If you have general queries about the Accelerator have a look through our FAQs or <a href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get in touch.</a></a></p>
+                    <p><a class="button-primary" href="{{ site.baseurl }}{% link faqs.md %}">Visit our FAQs</a></p>
+  
+            </div>
+        </article>
 
 
     {{ content }}
