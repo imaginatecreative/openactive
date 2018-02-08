@@ -53,7 +53,7 @@ defaults:
     layout: case-study
     is_featured: false
     thumbnail_image: "/uploads/placeholder.png"
-    member:
+    member: 
     strapline: 
 - scope:
     path: ''
@@ -87,9 +87,8 @@ defaults:
     is_featured: false
     is_enabled: false
     thumbnail_image: "/uploads/placeholder.png"
-    member:
+    member: 
     website: Web address
-    
 compress_html:
   blanklines: false
   profile: false
