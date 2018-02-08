@@ -86,16 +86,16 @@ Join the open data revolution with OpenActive and help the nation get active.
 </figure>
 </article>
 
-<article>
+<!-- <article>
 <div class="one">
 
 ### I’m interested, but how can I help?
 
 If you think your organisation would benefit from open data, but the decision isn’t in your hands, explore the links below for accessible documents to share with your team or employer.
 </div>
-</article>
+</article> -->
 
-<article class="call_to_action">
+<!-- <article class="call_to_action">
 <div class="subgrid">
 <div class="three purple-gradient-bc"> 
 #### Convince Your Company
@@ -121,4 +121,4 @@ Have a question? Get in touch.
 
 </div>
 </div>
-</article>
+</article> -->
