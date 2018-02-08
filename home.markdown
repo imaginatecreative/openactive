@@ -22,7 +22,7 @@ layout: home
 <li class="hero-content" id="h2"><p>Fill spaces in your activities</p></li>
 <li class="hero-content" id="h3"><p>Innovate to help people get active</p></li>
 </ul>
-[How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary--alt}
+[How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
 </div>
 <figure role="group" aria-labelledby="open-active-video">
 <iframe width="560" height="315"  src="https://www.youtube.com/embed/kfVCRaMJarE" allowfullscreen></iframe>

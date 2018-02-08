@@ -20,7 +20,7 @@
       }
       div.current {
         border: 1px solid $darkgray;
-        background-color: $brand-seven;
+        background-color: $brand-five;
       }
     }
     div.content {
@@ -103,7 +103,7 @@
           text-align: center;
           cursor: pointer;
           transform: skew(-30deg);
-          background-color: $brand-one;
+          background-color: $brand-three;
           padding: 1rem 2rem;
           font-size: $base-font-size;
 
@@ -149,7 +149,7 @@
             background-color: $brand-two;
           }
           &.current {
-            background: $brand-three;
+            background: $brand-four;
             .icon {
               transform: rotate(90deg);
               transition: transform 0.5s;
@@ -182,7 +182,7 @@
           h4 {
             font-size: 2.7rem;
             font-weight: 600;
-            color: $brand-blue;
+            color: $brand-four;
           }
           p {
             text-align: left;
@@ -267,7 +267,7 @@
               color: $white;
             }
             h4 {
-              color: $brand-one;
+              color: $brand-four;
             }
           }
         }

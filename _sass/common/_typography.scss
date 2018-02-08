@@ -325,8 +325,6 @@ blockquote {
   grid-column-end: 14;
   p {
     margin: $blockquote-margin 0;
-    font-size: $blockquote-size;
-    line-height: $blockquote-line-height;
     color: $blockquote-color;
     padding-left: 2rem;
     font-style: normal;
@@ -334,10 +332,12 @@ blockquote {
   }
   &.featured{
     padding:2rem;
+    background-color: $brand-blue;
     .quote{
       width: 100px;
       border-bottom-width: 1px;
       border-bottom-style: solid;
+      border-color: $brand-seven;
       display: inline-block;
       margin-bottom: 1rem;
     }
@@ -346,17 +346,20 @@ blockquote {
       height: 30px;
       margin-bottom: 1rem;
     }
+    .quote-svg{
+      fill:$white;
+    }
     p{
       padding: 0;
       margin: 0;
       grid-column-start: 2;
       grid-column-end: 14;
       border-left: none;
-      font-size: $header-size/  2.16346;
-      font-family: $font-family;
+      color: $white;
     }
     h6 {
       margin: 0;
+      color: $white;
       &:nth-of-type(1){
         margin: 1rem 0 0 0;
       }
@@ -369,6 +372,7 @@ blockquote {
 
 article.featured {
   grid-row-gap: 0;
+  background-color: $brand-blue;
   .quote {
     grid-row: 1;
     grid-column-start: 2;
@@ -378,6 +382,9 @@ article.featured {
       width: 30px;
       height: 30px;
       margin-bottom: 1rem;
+    }
+    .quote-svg{
+      fill:$white;
     }
   }
   blockquote {
@@ -392,10 +399,10 @@ article.featured {
       grid-column-start: 2;
       grid-column-end: 14;
       border-left: none;
-      font-size: $header-size/  2.16346;
-      font-family: $font-family;
+      color: $white;
     }
     h6 {
+      color: $white;
       margin:  0;
       &:nth-of-type(1){
         margin: 1rem 0 0 0;

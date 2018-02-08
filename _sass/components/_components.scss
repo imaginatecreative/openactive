@@ -37,7 +37,7 @@ article {
       }
       .stripe {
         position: absolute;
-        left: -1;
+        left: -1px;
         bottom: 0;
         width: 100%;
         height: 100%;
@@ -119,6 +119,7 @@ article {
       }
     }
     figure.hero {
+      min-height: 20vh;
       grid-column-start: 7;
       grid-column-end: 14;
       align-self: stretch;
@@ -140,7 +141,7 @@ article {
       }
       .stripe{
         position: absolute;
-        left: -1;
+        left: -2px;
         bottom: 0;
         width: 100%;
         height: 100%;
@@ -429,6 +430,20 @@ article {
 /*********************************/
 /*********************************/
 // CALL TO ACTION STYLES
+.inset-call-to-action{
+  align-self: stretch;
+  padding: 3rem 2rem;
+  text-align: center;
+  align-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  *,h3{
+    color: $white;
+  }
+}
 article {
   &.call_to_action {
     position: relative;
@@ -576,6 +591,30 @@ article {
       a {
         display: block;
       }
+      &:nth-child(1){
+        border-color: $brand-two;
+        .link{
+          color: $brand-two;
+        }
+      }
+      &:nth-child(2){
+        border-color: $brand-five;
+        .link{
+          color: $brand-five;
+        }
+      }
+      &:nth-child(3){
+        border-color: $brand-seven;
+        .link{
+          color: $brand-seven;
+        }
+      }
+      &:nth-child(4){
+        border-color: $brand-six;
+        .link{
+          color: $brand-six;
+        }
+      }
     }
     @media only screen and (max-width: 1200px) {
       .line-graphic {
@@ -654,6 +693,7 @@ article {
   }
   &.call_to_action--full-width {
     align-self: stretch;
+    position: relative;
     * {
       color: $white;
     }
@@ -667,6 +707,9 @@ article {
         grid-row: 1;
       }
     }
+    .line-graphic{
+      top:20%;
+    }
     .one {
       padding: 4rem 0 4rem 0;
       grid-column-start: 2;
@@ -674,7 +717,7 @@ article {
       z-index: 30;
       position: relative;
       @media only screen and (max-width: 1400px) {
-        padding: 0 0 2rem 0;
+        padding: 0 0 3rem 0;
       }
       @media only screen and (max-width: 900px) {
         grid-column-end: 14;

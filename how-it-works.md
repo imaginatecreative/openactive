@@ -225,9 +225,11 @@ Sapiente voluptatem quia fuga optio. Dignissimos et occaecati consequatur accusa
 </div>
 </article>
 
-<article class="call_to_action--full-width brand-ten-bc">
+<article markdown="0" class="call_to_action--full-width">
 <h2 class="sub-heading-two">Where now?</h2>
-<div class="one">
+<i class="line-graphic">{% include slim-line-graphic.svg %}</i>
+
+<div markdown="1" class="one">
 
 ### Getting Started
 Now you know how it works, let’s look at how you can make your data available or use a dataset for your own application.
@@ -236,7 +238,9 @@ Now you know how it works, let’s look at how you can make your data available 
 
 
 </div>
-<figure class="brand-nine-bc">
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
 <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
 </figure>
 </article>

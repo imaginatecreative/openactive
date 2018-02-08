@@ -61,9 +61,11 @@ By joining the open data revolution, you and your organisation can benefit from 
 </div>
 </article>
 
-<article class="call_to_action--full-width">
+<article markdown="0" class="call_to_action--full-width">
 <h2 class="sub-heading-two">What's Next?</h2>
-<div class="one">
+<i class="line-graphic">{% include slim-line-graphic.svg %}</i>
+
+<div markdown="1" class="one">
 
 ### How it works
 Sapiente vitae soluta eius aspernatur. Qui impedit qui et facere autem. Quidem reprehenderit sed natus repudiandae.
@@ -73,8 +75,10 @@ Sapiente vitae soluta eius aspernatur. Qui impedit qui et facere autem. Quidem r
 
 </div>
 
-<figure class="brand-nine-bc">
-<div style="background: url({{ site.url }}/openactive/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
+<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
 </figure>
 
 </article>
