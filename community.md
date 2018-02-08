@@ -121,7 +121,7 @@ OpenActive’s open-invitation community is continuing to grow. Discover who has
 
 <article>
 <div class="one">
-<p><a class="button-primary" href="{{ site.baseurl }}{% link community-members.md %}">View all the members</a></p>
+<p><a class="button-primary" href="{{ site.baseurl }}{% link members-page.md %}">View all the members</a></p>
     
 
 ### OpenActive standards group
