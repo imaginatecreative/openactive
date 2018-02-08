@@ -5,7 +5,7 @@ categories:
 - jekyll
 - update
 is_featured: true
-thumbnail_image: "/uploads/champions2.jpeg"
+thumbnail_image: "/uploads/champions.png"
 layout: post
 ---
 
