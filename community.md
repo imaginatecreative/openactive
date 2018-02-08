@@ -106,7 +106,8 @@ OpenActive’s open-invitation community is continuing to grow. Discover who has
 </article>
 
 <article >
-            {% for post in site.members %}
+{% assign posts = site.members | sample:18 %}
+{% for post in posts %}
 {% assign theImage = post.thumbnail_image %}
 
 <div class="six" data-tab="{{ forloop.index }}" markdown="0" >
@@ -120,10 +121,8 @@ OpenActive’s open-invitation community is continuing to grow. Discover who has
 
 <article>
 <div class="one">
-
+<p><a class="button-primary" href="{{ site.baseurl }}{% link community-members.md %}">View all the members</a></p>
     
-    
-[All Members]( {{ site.baseurl }}{% link community-members.md %})  
 
 ### OpenActive standards group
 
