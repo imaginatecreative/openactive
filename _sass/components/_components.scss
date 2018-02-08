@@ -15,7 +15,7 @@ article {
       }
     }
     figure {
-      grid-column-start: 7;
+      grid-column-start: 8;
       grid-column-end: -1;
       grid-row: 1;
       align-self: stretch;
@@ -307,6 +307,7 @@ article {
         justify-content: center;
         align-content: center;
         display: inline-grid;
+        opacity:.5;
         figure {
           margin: 0;
           display: inline-block;
@@ -371,6 +372,9 @@ article {
           }
         }
       }
+    .current {
+      opacity: 1;
+    }
     }
     .case-wrap {
       grid-column-start: 9;

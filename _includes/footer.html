@@ -11,9 +11,10 @@
             </div>
             <div class="members">
                 <div class="subgrid">
-                    {% assign posts = site.members | sample:10 %}
+                    {% assign posts = site.members | sample:12 %}
+                    <!-- {% assign posts = site.members %} -->
                     {% for post in posts %}
-                    {% if post.is_featured %}
+                    <!-- {% if post.is_featured %} -->
                     <div class="six-members" id="member-{{ forloop.index }}">
                         <figure role="group">
                             <a href="{{ post.url | relative_url }}">
@@ -22,7 +23,7 @@
                             </a>
                         </figure>
                     </div>
-                    {% endif %}
+                    <!-- {% endif %} -->
                     {% endfor %}
                 </div>
             </div>

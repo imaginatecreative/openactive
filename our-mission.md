@@ -68,7 +68,7 @@ By joining the open data revolution, you and your organisation can benefit from 
 <div markdown="1" class="one">
 
 ### How it works
-Sapiente vitae soluta eius aspernatur. Qui impedit qui et facere autem. Quidem reprehenderit sed natus repudiandae.
+Let’s look at how we achieve our vision in practice and the progress we’ve made so far.
 
 [How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .primary_cta}
 
@@ -94,7 +94,7 @@ Sapiente vitae soluta eius aspernatur. Qui impedit qui et facere autem. Quidem r
 <p>This is an open-invitation community of pioneering organisations. If you are interested in getting involved please join us to find out more.</p>
 <p>Find out all about the open active community and how you can support it.</p>
 
-<a class="button-primary" href="{% link community.md %}">Meet the Members</a>
+<a class="button-primary" href="{{ site.baseurl }}{% link community.md %}">Get Involved</a>
 
 <i class="line-graphic">{% include line-graphic-corner.svg %}</i>
 
