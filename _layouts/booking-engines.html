@@ -11,9 +11,8 @@ layout: default
             {{ content }}
         </div>
     </article>
-
-    {% if site.booking_engines %}
-    {% for post in site.booking_engines %}
+    {% assign posts = site.booking_engines | where:"is_enabled", true %}}
+    {% for post in posts %}
     {% assign num = forloop.length %}
     {% endfor %}
 
@@ -56,7 +55,7 @@ layout: default
 
 
     </aside>
-    {% endif %}
+   
 
 
 </div>

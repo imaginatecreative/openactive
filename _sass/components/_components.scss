@@ -303,6 +303,7 @@ article {
         justify-content: center;
         align-content: center;
         display: inline-grid;
+        opacity:.5;
         figure {
           margin: 0;
           display: inline-block;
@@ -367,6 +368,9 @@ article {
           }
         }
       }
+    .current {
+      opacity: 1;
+    }
     }
     .case-wrap {
       grid-column-start: 9;
