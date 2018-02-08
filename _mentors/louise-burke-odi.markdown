@@ -1,5 +1,6 @@
 ---
-title: Louise Burke, ODI
+title: Louise Burke
+role: ODI
 date: 2018-02-06 17:56:00 Z
 thumbnail_image: "/uploads/louiseb.jpg"
 linkedin: 'https://www.linkedin.com/in/louise-burke-2445832/

@@ -1,5 +1,6 @@
 ---
-title: Rob Dearing, LTA
+title: Rob Dearing
+role: LTA
 date: 2018-02-06 17:58:00 Z
 thumbnail_image: "/uploads/rob_dearing.jpg"
 twitter: https://twitter.com/robd2011

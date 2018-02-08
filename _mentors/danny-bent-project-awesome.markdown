@@ -1,5 +1,6 @@
 ---
-title: Danny Bent, Project Awesome
+title: Danny Bent
+role: Project Awesome
 date: 2018-02-06 17:50:00 Z
 thumbnail_image: "/uploads/danny_bent.jpg"
 twitter: https://twitter.com/dannybent
