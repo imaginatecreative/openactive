@@ -16,10 +16,10 @@ layout: home
 <div class="hero-tab" data-tab="h3"></div>
 </nav>
 <div class="content">
-<h1>Help give physical activity unlimited reach</h1>
+<h1>Helping physical activity reach everyone</h1>
 <ul class="hero_tab_content">
 <li class="hero-content" id="h1"><p>Improve our nation’s physical health</p></li>
-<li class="hero-content" id="h2"><p>Fill spaces in your activities</p></li>
+<li class="hero-content" id="h2"><p>Attract people to join activities</p></li>
 <li class="hero-content" id="h3"><p>Innovate to help people get active</p></li>
 </ul>
 [How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
@@ -36,7 +36,7 @@ layout: home
 <h2 class="sub-heading-two">Join</h2>
 <div class="one">
 
-### The Accelerator Program
+### The Accelerator Programme
 Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
 
 [Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
