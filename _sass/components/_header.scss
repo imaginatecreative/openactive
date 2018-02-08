@@ -762,8 +762,13 @@ html.no-cssgrid {
           height: 30px;
           text-align: center;
           padding: 0;
-          span {
+          span.label {
             display: none;
+          }
+          span.icon{
+            width:30px;
+            height: 30px;
+            padding:0;
           }
         }
       }

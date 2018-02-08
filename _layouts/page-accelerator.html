@@ -170,42 +170,48 @@ layout: default
             </blockquote>
         </div>
     </article>
-    <article class="title-row">
+    <article class="title-row experience">
         <h2 class="sub-heading-two">Our experience supporting startups</h2>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>5 Years</figcaption>
+                {% include years.svg %}
+                <strong>5</strong>
+                <figcaption>Years</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>124 startups</figcaption>
+                {% include startup.svg %}
+                <strong>124</strong>
+                <figcaption>startups</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>24 countries worldwide</figcaption>
+                {% include world.svg %}
+                <strong>24</strong>
+                <figcaption>countries worldwide</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>23 cohorts</figcaption>
+                {% include cohorts.svg %}
+                <strong>23</strong>
+                <figcaption>cohorts</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>£30m investment raised</figcaption>
+                {% include investment.svg %}
+                <strong>£30m</strong>
+                <figcaption>investment raised</figcaption>
             </figure>
         </div>
         <div class="six">
             <figure>
-                <img src="{{ site.baseurl }}/assets/images/experience.png">
-                <figcaption>400 jobs</figcaption>
+                {% include jobs.svg %}
+                <strong>400</strong>
+                <figcaption>jobs</figcaption>
             </figure>
         </div>
     </article>
@@ -336,13 +342,40 @@ layout: default
         </div>
     </article>
 
+
     <article class="title-row">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
-            <p>If you have general queries about the Accelerator have a look through our FAQs or <a
-                    href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get in touch.</a></a></p>
-            <p><a class="button-primary" href="{{ site.baseurl }}{% link faqs.md %}">Visit our FAQs</a></p>
-
+            <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>
+        </div>
+    </article>
+    <article class="faq-snippet">
+        <div class="two">
+            <div class="news-content">
+                {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
+                {% for post in aboutAccelerator limit:3 %}
+                <div class="one">
+                    <h5>Q: {{ post.title | escape}}</h5>
+                    <p class="post-snippet">{{post.content}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="two">
+            <div class="news-content">
+                {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
+                {% for post in aboutAccelerator limit:2 offset:3 %}
+                <div class="one">
+                    <h5>Q: {{ post.title | escape}}</h5>
+                    <p class="post-snippet">{{post.content}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="one">
+            <p><a class="button-primary--ghost" href="{{ site.baseurl }}{% link faqs.md %}">Visit
+                our FAQs</a>&nbsp;<a class="button-primary" href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get
+                in touch.</a></p>
         </div>
     </article>
 
