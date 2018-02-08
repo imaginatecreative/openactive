@@ -52,7 +52,6 @@ Explore the dashboard to find the data you need, identify which feeds conform to
 3. By publishing your data, your activities will be shared across websites and apps that attract millions of users, to communities and services that engage local people
 
 
-[Publish Data]( {{ site.baseurl }}{% link simple-publish.md %}){: .button-primary}
 
 </div>
 <div class="two use gradient list">
@@ -64,8 +63,6 @@ Explore the dashboard to find the data you need, identify which feeds conform to
 3. Easy access to opportunity data can help people to get active, and boost participation in activities nationwide
 4. We encourage you to explore the data published so far, and discover what’s useful for you
 
-
-[Use Data]( {{ site.baseurl }}{% link simple-use.md %}){: .button-primary}
 
 </div>
 </div>
@@ -87,21 +84,21 @@ Detailed step-by-step guidance to help you quickly make the most of OpenActive�
 
 ### Discussions
 Learn more about how we’re making opportunity data easier to access, use, and share nationwide.
-[Discover More]( {{ site.baseurl }}{% link discussions.md %}){: .link }
+[Discover More](https://www.openactive.io/public-openactive-w3c/){: .link }
 
 </div>
 <div class="four">
 
 ### References
 Dive into the detail by looking through our standards documentation and best practice guidance.
-[Discover More]( {{ site.baseurl }}{% link references.md %}){: .link }
+[Discover More](https://www.w3.org/2017/08/realtime-paged-data-exchange/){: .link }
 
 </div>
 <div class="four">
 
 ### Tutorials
 Guidance for developers on getting started, to help you learn how to publish and use your data to benefit your organisation. 
-[Discover More]( {{ site.baseurl }}{% link tutorials.md %}){: .link }
+[Discover More]( {{ site.baseurl }}{% link e-learning.md %}){: .link }
 
 </div>
 </div>
