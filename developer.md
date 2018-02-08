@@ -3,9 +3,9 @@ title: Developer
 permalink: "/developer/"
 position: 4
 is_main_navigation: true
-layout: page-hero
-thumbnail_image: "/uploads/sideplank.jpg"
+thumbnail_image: "/uploads/dancin.png"
 strapline: 'Know what your here for? '
+layout: page-hero
 ---
 
 {::options parse_block_html="true" /}

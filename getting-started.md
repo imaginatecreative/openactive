@@ -3,9 +3,9 @@ title: Getting Started
 permalink: "/getting-started/"
 position: 3
 is_main_navigation: true
-layout: page-hero
-thumbnail_image: "/uploads/sideplank.jpg"
+thumbnail_image: "/uploads/iStock-803099000optimised.png"
 strapline: Discover how to build unlimited reach for your activities
+layout: page-hero
 ---
 
 {::options parse_block_html="true" /}
