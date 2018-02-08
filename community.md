@@ -3,22 +3,14 @@ title: Community
 permalink: "/community/"
 position: 5
 is_main_navigation: true
+layout: page-hero
 thumbnail_image: "/uploads/iStock-501777666_optimised.png"
 strapline: Innovation through Collaboration
-layout: page-hero
 ---
 
 {::options parse_block_html="true" /}
 
-<article class="note-wrap">
-<div class="notes">
 
-##### Page Notes ~ {{ page.title | escape }}
-Content for this page is detailed in the
-[Google Doc](https://drive.google.com/open?id=170_Ao9Y5WspjoVC_n6OfPLC55QQ8JbYzt_JxK888OvM){:target="_blank"}
-
-</div>
-</article>
 
 
 <!-- <article markdown="0" class="hero--sub"> -->

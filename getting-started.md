@@ -3,9 +3,9 @@ title: Getting Started
 permalink: "/getting-started/"
 position: 3
 is_main_navigation: true
+layout: page-hero
 thumbnail_image: "/uploads/iStock-803099000optimised.png"
 strapline: Discover how to build unlimited reach for your activities
-layout: page-hero
 ---
 
 {::options parse_block_html="true" /}
@@ -106,12 +106,24 @@ Search our list of OpenActive enabled system, to find the activity providers alr
 </article>
 
 
+<article class="note-wrap">
+<div class="notes">
 
-<article markdown="0" class="call_to_action--full-width">
+##### Section Notes ~ CTA Block
+**Purpose**: A section aimed at developers who want to engage with the documentation and specifications
+
+**Functionality**:
+
+**Design**:
+
+**Copy-writing Notes**:
+
+</div>
+</article>
+
+<article class="call_to_action--full-width brand-ten-bc">
 <h2 class="sub-heading-two">Show me the code</h2>
-<i class="line-graphic">{% include slim-line-graphic.svg %}</i>
-
-<div markdown="1" class="one">
+<div class="one">
 
 ### For Developers
 Join the open data revolution with OpenActive and help the nation get active. 
@@ -119,10 +131,8 @@ Join the open data revolution with OpenActive and help the nation get active.
 [Developer]( {{ site.baseurl }}{% link developer.md %}){: .button-primary}
 
 </div>
-<figure>
-<div class="triangle"></div>
-<div class="stripe"></div>
-<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+<figure class="brand-nine-bc">
+<div style="background: url({{ site.url }}/openactive/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
 </figure>
 </article>
 
@@ -131,7 +141,7 @@ Join the open data revolution with OpenActive and help the nation get active.
 
 ### I’m interested, but how can I help?
 
-If you think your organisation would benefit from open data sharing, but the decision isn’t in your hands, explore the links below for accessible documents to share with your team or employer. 
+If you think your organisation would benefit from open data, but the decision isn’t in your hands, explore the links below for accessible documents to share with your team or employer.
 </div>
 </article>
 

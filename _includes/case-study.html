@@ -18,10 +18,10 @@
 {% for post in site.case_studies %}
 {% assign theImage = post.thumbnail_image %}
 {% if post.is_featured %}
-{% if post.member %}
+<!--{% if post.member %}
 {% assign theMember = site.members | where:"title", post.member  | first %}
-{% assign theImage = theMember.thumbnail_image %}
-{% endif %}
+ {% assign theImage = theMember.thumbnail_image %} 
+{% endif %}-->
 
 <div class="case-tab" data-tab="case-{{ forloop.index }}" markdown="0" >
 
