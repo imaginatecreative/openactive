@@ -60,7 +60,8 @@ a.button-primary{
   display: inline-block;
   vertical-align: top;
   padding: 10px 30px;
-  margin: 0;
+  //margin: 1rem 0 0 0 ;
+  margin: 0 ;
 
   background-color: $brand-five;
   color: $white;
@@ -164,7 +165,7 @@ a.button-secondary
   display: inline-block;
   vertical-align: top;
   padding: 7px 10px;
-  margin: 0;
+  margin: 1rem 0 0 0 ;
 
 
   background-color: $brand-three;

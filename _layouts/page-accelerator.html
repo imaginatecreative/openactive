@@ -4,27 +4,47 @@ layout: default
 
 <div class="page startup-template">
 
-    <article markdown="0" class="hero--montage">
-        <i class="line-graphic">{% include slim-line-graphic.svg %}</i>
-        <div>
+    <!--<article markdown="0" class="hero&#45;&#45;montage">-->
+        <!--<i class="line-graphic">{% include slim-line-graphic.svg %}</i>-->
+        <!--<div>-->
+            <!--<h1>{{page.title}}</h1>-->
+            <!--<p>{{page.strapline}}</p>-->
+        <!--</div>-->
+        <!--<figure class="hero">-->
+            <!--<div class="stripe"></div>-->
+            <!--<div class="triangle"></div>-->
+            <!--<div style="background: url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;"></div>-->
+        <!--</figure>-->
+        <!--<figure class="sub-menu">-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+            <!--<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>-->
+        <!--</figure>-->
+    <!--</article>-->
+
+    <article class="hero--thin">
+        <div class="one" style="background: linear-gradient(to right, #2b2b2b 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;">
             <h1>{{page.title}}</h1>
             <p>{{page.strapline}}</p>
+            <p><a class="button-primary" href="#">Sign Up</a>&nbsp;<a class="button-primary--ghost" href="#">View Timeline</a></p>
         </div>
-        <figure class="hero">
-            <div class="stripe"></div>
-            <div class="triangle"></div>
-            <div style="background: url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;"></div>
-        </figure>
-        <figure class="sub-menu">
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-            <div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
-        </figure>
     </article>
 
 
     <article>
+        <div class="two">
+            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
+                on many aspects of people’s
+                lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
+            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong>
+                often don’t offer
+                the seamless experiences we are used to in industries like travel or entertainment.
+                <strong>Information</strong>
+                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens
+                between the
+                different stakeholders in the ecosystem, such as gyms and sport clubs.</p>
+        </div>
         <div class="two">
             <blockquote class="featured ">
                 <i class="quote">
@@ -37,17 +57,6 @@ layout: default
                        target="_blank">Active Lives Survey - 16/17</a></h6>
             </blockquote>
         </div>
-        <div class="two">
-            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
-                on many aspects of people’s
-                lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
-            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong>
-                often don’t offer
-                the seamless experiences we are used to in industries like travel or entertainment.
-                <strong>Information</strong>
-                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens
-                between the
-                different stakeholders in the ecosystem, such as gyms and sport clubs.</p></div>
     </article>
 
 
@@ -59,7 +68,7 @@ layout: default
             <p>Join the ODI&rsquo;s OpenActive Accelerator, and be part of a unique opportunity to challenge the status
                 quo with new innovation, and help more people <strong>get active</strong> using open data.</p>
             <br/>
-            <a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Sign Up</a>
+            <a class="button-primary" href="">Sign Up</a>
 
 
         </div>
@@ -343,7 +352,7 @@ layout: default
     </article>
 
 
-    <article class="title-row">
+    <article class="title-row collapse-bottom">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
             <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>

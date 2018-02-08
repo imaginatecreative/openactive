@@ -44,7 +44,7 @@ Shortlisted champions were interviewed by a member of the ODI’s OpenActive tea
 
 ### Meet the champions!
 
-![spotlight_tabletennis.jpeg](/uploads/champions.jpeg)
+![spotlight_tabletennis.jpeg](/assets/uploads/champions.jpeg)
 *From left: Paul Makinen (England Squash), Lawrie Baker (Active Surrey), Shirley Veevers (GreaterSport), Rachel Cooke (Active Norfolk), Alex Zurita (London Sport), Craig Hyslop (Bristol City Council), Nathan Matley (Link4Life) Champs not in photo: Jade Cation (Exercise Movement Dance UK), Emma Robinson (Yorkshire Sport Foundation), Gemma Finlay-Gray (Active Sussex)*
 
 
