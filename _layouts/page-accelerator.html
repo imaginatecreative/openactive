@@ -4,11 +4,11 @@ layout: default-accelerator
 
 <div class="page global-template start-up-components">
 
-    <article class="hero--large"
-             style="background: linear-gradient(to right, #2b2b2b 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center center / cover no-repeat;">
+    <article class="hero--large collapse-bottom"
+             style="background: linear-gradient(to right, #181242 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center 43% / cover no-repeat;">
         <div class="two">
             <h1>{{page.title}}</h1>
-            <p>6.2 million adults are fairly active but don’t exercise enough to improve their health and
+            <p class="hero-sub">6.2 million adults are fairly active but don’t exercise enough to improve their health and
                 wellbeing.</p>
             <h6>Sport England</h6>
             <p><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf"
@@ -16,7 +16,7 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="intro-text">
+    <article class="intro-text invert-3">
         <div class="one">
             <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
                 on many aspects of people’s
@@ -32,6 +32,7 @@ layout: default-accelerator
         <div class="one">
             <a class="button-primary--ghostlarge" href="">APPLY NOW</a>
         </div>
+        <i class="line-graphic">{% include line-graphic-corner.svg %}</i>
     </article>
 
     <article id="hover-blocks" class="title-row">
@@ -111,7 +112,7 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="title-row featured">
+    <article class="title-row featured invert-2">
         <i class="quote">
             {% include quote.svg %}
         </i>
@@ -173,7 +174,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row invert" id="mentors">
+    <article class="title-row invert-2" id="mentors">
         <h2 class="sub-heading-two">Mentors</h2>
         {% assign sortedPosts = site.mentors | sort: 'title' %}
         {% for post in sortedPosts %}
@@ -244,7 +245,7 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="title-row invert">
+    <article class="title-row invert-3">
         <h2 class="sub-heading-two">Timeline</h2>
         <div class="one">
             {% include timelinelandscapetext.svg %}
@@ -280,13 +281,13 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row collapse-bottom invert">
+    <article class="title-row collapse-bottom invert-4">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
             <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>
         </div>
     </article>
-    <article class="faq-snippet invert">
+    <article class="faq-snippet invert-4">
         <div class="two">
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}

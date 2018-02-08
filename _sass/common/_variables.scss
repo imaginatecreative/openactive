@@ -168,7 +168,7 @@ $globalEight: $brand-eight;
   a.button-primary--ghostlarge{
     background-color: transparent;
     border-color: $globalFive;
-    color: $globalFive;
+    color: $white;
   }
   .button-secondary {
     background-color: $globalFour;
@@ -212,7 +212,7 @@ $globalEight: $brand-eight;
   }
   .invert{
     background-color: $globalFive;
-    padding: 3rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
     .sub-heading-two {
       color: $white;
     }
@@ -233,6 +233,22 @@ $globalEight: $brand-eight;
       color: white;
 
     }
+  }
+  .invert-2{
+    @extend .invert;
+    background-color: $logo-four;
+  }
+  .invert-3{
+    @extend .invert;
+    background-color: $brand-five;
+  }
+  .invert-4{
+    @extend .invert;
+    background-color: $logo-six;
+  }
+  .invert-5{
+    @extend .invert;
+    background-color: $logo-six;
   }
 }
 

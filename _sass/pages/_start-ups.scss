@@ -149,7 +149,9 @@
     }
   }
   #mentors {
+    padding:2rem;
     .six {
+      text-align: center;
       position: relative;
       img{
         border-radius: 50%;
@@ -157,15 +159,19 @@
       .social-links{
         width:100%;
         display: inline-flex;
-        align-content: space-between;
+        align-content: center;
+        justify-content: space-evenly;
+        margin-top: 0.5rem;
+        border-top: 1px solid;
+        padding-top: 0.5rem;
       }
       .svg.twitter {
-        width: 30px;
+        width: 20px;
         fill: $brand-one;
       }
 
       .svg.linkedin {
-        width: 25px;
+        width: 20px;
         fill: $brand-one;
       }
 
@@ -176,8 +182,23 @@
     }
   }
   .intro-text{
+    position: relative;
+    .line-graphic{
+      display: inline-block;
+      right: 0;
+      bottom: 0;
+      width: 380px;
+        svg{
+          position: absolute;
+          height: 50%;
+          bottom: 0;
+          /* max-height: 250px; */
+          right: 0;
+        }
+    }
     .one{
-      text-align: center;
+      &:nth-child(2){
+      }
     }
   }
 }
