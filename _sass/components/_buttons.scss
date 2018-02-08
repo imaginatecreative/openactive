@@ -141,6 +141,31 @@ a.button-primary--ghost{
   }
 
 }
+// Primary Large Styles
+//
+// Primary Ghost call to action
+//
+// Weight: 1
+//
+// :hover       - Hover state.
+// :active      - Active state.
+// .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+//
+// Markup:
+// <a class="button-primary--ghost {{modifier_class}}">Button</a>
+//
+// Styleguide buttons.primary-ghost
+a.button-primary--ghostlarge{
+  @extend .button-primary;
+  background-color: transparent;
+  border:1px solid $brand-five;
+  padding: 20px 40px;
+  font-size: $base-font-size;
+  &:hover{
+    color: $white;
+  }
+
+}
 
 
 // Secondary Styles

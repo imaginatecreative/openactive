@@ -499,6 +499,10 @@
     }
     &.collapse-bottom{
       margin-bottom: 0;
+      padding-bottom:0!important;
+    }
+    &.collapse-bottom-with-pad{
+      margin-bottom: 0;
     }
   }
   div.subgrid, nav.subgrid {

@@ -1,4 +1,4 @@
-.startup-template {
+.start-up-components {
   #hover-blocks {
     .one {
       .five {
@@ -15,11 +15,17 @@
           svg {
             margin-top: 0;
             transform: scale(1.1);
+            .opendata-1, .officespace-1, .mentorship-1, .mentorship-2, .workshop-1, .oneonone-1, .perks-1, .networking-1, .partners-1, .investors-1, .demo-1 {
+              fill: $brand-five;
+              stroke: $brand-five;
+            }
             .opendata-1 {
             }
             .officespace-1 {
             }
             .mentorship-1 {
+            }
+            .mentorship-2 {
             }
             .workshop-1 {
             }
@@ -80,39 +86,94 @@
       }
     }
   }
-  .experience {
-    .six{
-      figure{
+  .featured{
+    .quote{
+      margin-top: 0;
+      svg{
+        opacity: 0;
+      }
+    }
+  }
+  .stats {
+    .six {
+      figure {
         text-align: center;
-        svg{
-          .years-1{}
-          .startup-1{}
-          .world-1{}
-          .cohorts-1{}
-          .investment-1{}
-          .jobs-1{  }
+        svg {
+          .years-1, .startup-1, .world-1, .cohorts-1, .investment-1, .jobs-1 {
+            fill:$brand-five;
+          }
+          .years-1 {
+          }
+          .startup-1 {
+          }
+          .world-1 {
+          }
+          .cohorts-1 {
+          }
+          .investment-1 {
+          }
+          .jobs-1 {
+          }
         }
       }
+
     }
   }
-  .faq-snippet{
-    .two{
-      h5{
-        color: $header-color;
+  .faq-snippet {
+    .two {
+      h5 {
+        margin-bottom:1rem;
       }
     }
-
+    .show_hide{
+      border-bottom: 1px solid white;
+      margin-bottom: 1rem;
+    }
+    .slidingDiv > p{
+      margin-top: 0;
+      margin-bottom:1rem;
+    }
+  }
+  .steps {
+    .one,.three{
+      text-align: center;
+    }
+    .three{
+      &:nth-child(3){
+        align-self: center;
+      }
+    }
+    figure{
+      max-width: 200px;
+      display: inline-block;
+    }
   }
   #mentors {
-
-    .four {
+    padding:4rem 0;
+    .six {
+      text-align: center;
+      position: relative;
+      img{
+        border-radius: 50%;
+      }
+      .social-links{
+        width:100%;
+        display: inline-flex;
+        align-content: center;
+        justify-content: space-evenly;
+        margin-top: 0.5rem;
+        border-top: 1px solid;
+        padding-top: 0.5rem;
+      }
       .svg.twitter {
-        width: 30px;
+        width: 20px;
+        height: 20px;
         fill: $brand-one;
       }
 
       .svg.linkedin {
-        width: 25px;
+        width: 20px;
+        height: 20px;
         fill: $brand-one;
       }
 
@@ -121,6 +182,25 @@
         line-height: 1.2;
       }
     }
-
+  }
+  .intro-text{
+    position: relative;
+    .line-graphic{
+      display: inline-block;
+      right: 0;
+      bottom: 0;
+      width: 380px;
+        svg{
+          position: absolute;
+          height: 50%;
+          bottom: 0;
+          /* max-height: 250px; */
+          right: 0;
+        }
+    }
+    .one{
+      &:nth-child(2){
+      }
+    }
   }
 }
