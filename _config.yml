@@ -5,7 +5,7 @@ collections:
   booking_engines:
     title: Booking Systems
     output: true
-    member: ''
+   
   case_studies:
     title: Case Studies
     output: true
@@ -88,6 +88,7 @@ defaults:
     is_enabled: false
     thumbnail_image: "/uploads/placeholder.png"
     website: Web address
+    member: ''
 compress_html:
   blanklines: false
   profile: false
