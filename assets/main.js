@@ -1,6 +1,6 @@
 $(document).ready(function () {
     (function ($) {
-        if ($('body').hasClass('.accelerator-template')) {
+        if ($("body").hasClass(".accelerator-template")) {
             var el = document.querySelector('.years');
             od = new Odometer({
                 el: el,
