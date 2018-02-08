@@ -24,28 +24,31 @@ layout: default
     </article>
 
 
-
     <article>
         <div class="two">
             <blockquote class="featured ">
                 <i class="quote">
                     {% include quote.svg %}
                 </i>
-                <p>6.2 million adults are fairly active but don’t exercise enough to improve their health and wellbeing.</p>
+                <p>6.2 million adults are fairly active but don’t exercise enough to improve their health and
+                    wellbeing.</p>
                 <h6>Sport England</h6>
-                <h6><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf" target="_blank">Active Lives Survey - 16/17</a></h6>
+                <h6><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf"
+                       target="_blank">Active Lives Survey - 16/17</a></h6>
             </blockquote>
         </div>
         <div class="two">
-            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact on many aspects of people’s
+            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
+                on many aspects of people’s
                 lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
-            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong> often don’t offer
-                the seamless experiences we are used to in industries like travel or entertainment. <strong>Information</strong>
-                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens between the
-                different stakeholders in the ecosystem, such as gyms and sport clubs.</p>        </div>
+            <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong>
+                often don’t offer
+                the seamless experiences we are used to in industries like travel or entertainment.
+                <strong>Information</strong>
+                about what’s available is mostly contained in silos, and little <strong>collaboration</strong> happens
+                between the
+                different stakeholders in the ecosystem, such as gyms and sport clubs.</p></div>
     </article>
-
-
 
 
     <article class="call_to_action--full-width">
@@ -53,7 +56,8 @@ layout: default
         <div class="one">
 
             <h3> The Accelerator Program</h3>
-            <p>Join the ODI&rsquo;s OpenActive Accelerator, and be part of a unique opportunity to challenge the status quo with new innovation, and help more people <strong>get active</strong> using open data.</p>
+            <p>Join the ODI&rsquo;s OpenActive Accelerator, and be part of a unique opportunity to challenge the status
+                quo with new innovation, and help more people <strong>get active</strong> using open data.</p>
             <br/>
             <a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Sign Up</a>
 
@@ -138,7 +142,8 @@ layout: default
                 <figure>
                     {% include demo.svg %}
                     <strong>Demo Day</strong>
-                    <figcaption>Demonstrate your products and services at an invite-only pitch to investors.</figcaption>
+                    <figcaption>Demonstrate your products and services at an invite-only pitch to investors.
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -150,18 +155,21 @@ layout: default
 
         </div>
     </article> -->
-    <article>
-            <div class="one">
-                <blockquote class="featured ">
-                    <i class="quote">
-                        {% include quote.svg %}
-                    </i>
-                    <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build a product that consistently "wows" the householders that use our platform and helps them live more happily together.</p>
-                    <h6>Nick Katz</h6>
-                    <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
-                </blockquote>
-            </div>
 
+    <article>
+        <div class="one">
+            <blockquote class="featured ">
+                <i class="quote">
+                    {% include quote.svg %}
+                </i>
+                <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build
+                    a product that consistently "wows" the householders that use our platform and helps them live more
+                    happily together.</p>
+                <h6>Nick Katz</h6>
+                <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
+            </blockquote>
+        </div>
+    </article>
     <article class="title-row">
         <h2 class="sub-heading-two">Our experience supporting startups</h2>
         <div class="six">
@@ -204,7 +212,8 @@ layout: default
 
     <article class="title-row">
         <div class="one">
-            <p>From fighting pollution using Artificial Intelligence to allowing developers to build transport solutions to helping clients
+            <p>From fighting pollution using Artificial Intelligence to allowing developers to build transport solutions
+                to helping clients
                 bring traceability to their products and processing big data to drive better decision making, past
                 <strong>ODI startup alumni are passionate and diverse.</strong></p>
             <p>This diversity makes for a <strong>powerful peer-to-peer network</strong> and offers valuable
@@ -220,36 +229,35 @@ layout: default
 
         <div class="four">
 
-                <figure>
-                    <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
-                    <figcaption>{{ post.title | escape }}</figcaption>
-                </figure>
-               {% if post.twitter %} 
-                                    <a target="_blank" rel="noopener" href="{{ post.twitter }}">
+            <figure>
+                <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
+                <figcaption>{{ post.title | escape }}</figcaption>
+            </figure>
+            {% if post.twitter %}
+            <a target="_blank" rel="noopener" href="{{ post.twitter }}">
                                         <span class="icon icon--twitter">
                                             {% include twitter.svg %}
                                         </span>
-                                        <span class="hidden" aria-hidden="true">
+                <span class="hidden" aria-hidden="true">
                                             Twitter
                                         </span>
-                                    </a>
-                {% endif %}
-                {% if post.linkedin %}
-                                    <a href="{{ post.linkedin }}" target="_blank">
+            </a>
+            {% endif %}
+            {% if post.linkedin %}
+            <a href="{{ post.linkedin }}" target="_blank">
                                         <span class="icon icon--twitter">
                                             {% include linkedin.svg %}
                                         </span>
-                                        <span class="hidden" aria-hidden="true">
+                <span class="hidden" aria-hidden="true">
                                             LinkedIn
                                         </span>
-                                    </a>
-                {% endif %}
+            </a>
+            {% endif %}
         </div>
-        
-  
-        
+
+
         {% endfor %}
- 
+
     </article>
     <hr/>
 
@@ -262,7 +270,7 @@ layout: default
 
         <div class="four">
             <figure>
-                    <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
+                <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
             </figure>
         </div>
 
@@ -300,13 +308,14 @@ layout: default
         </div>
     </article>
     <article class="title-row">
-            <h2 class="sub-heading-two">Are You Eligible?</h2>
-            <div class="one">
-                    <p>To apply you need to fulfill certain requirements, find out if you are eligible.</p>
-                    <p><a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a></p>
-  
-            </div>
-        </article>
+        <h2 class="sub-heading-two">Are You Eligible?</h2>
+        <div class="one">
+            <p>To apply you need to fulfill certain requirements, find out if you are eligible.</p>
+            <p><a class="button-primary" href="{{ site.baseurl }}{% link start-ups.md %}">Accelerator Requirements</a>
+            </p>
+
+        </div>
+    </article>
 
     <article class="call_to_action">
         <div class="subgrid">
@@ -316,7 +325,9 @@ layout: default
             </div>
             <div class="three purple-gradient-bc">
                 <h4>Become a mentor </h4>
-                <a class="button-primary" href="https://docs.google.com/forms/d/1rv50zCN17njsYrAG2YBlHqqSpVeHCJmp0NpN87AGBiQ/edit" target="_blank" >Sign Up</a>
+                <a class="button-primary"
+                   href="https://docs.google.com/forms/d/1rv50zCN17njsYrAG2YBlHqqSpVeHCJmp0NpN87AGBiQ/edit"
+                   target="_blank">Sign Up</a>
             </div>
             <div class="three red-gradient-bc ">
                 <h4>Join as a partner</h4>
@@ -326,13 +337,14 @@ layout: default
     </article>
 
     <article class="title-row">
-            <h2 class="sub-heading-two">More questions?</h2>
-            <div class="one">
-                    <p>If you have general queries about the Accelerator have a look through our FAQs or <a href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get in touch.</a></a></p>
-                    <p><a class="button-primary" href="{{ site.baseurl }}{% link faqs.md %}">Visit our FAQs</a></p>
-  
-            </div>
-        </article>
+        <h2 class="sub-heading-two">More questions?</h2>
+        <div class="one">
+            <p>If you have general queries about the Accelerator have a look through our FAQs or <a
+                    href="mailto:Lisa.ellwood@theodi.org?subject=OpenActive application query">get in touch.</a></a></p>
+            <p><a class="button-primary" href="{{ site.baseurl }}{% link faqs.md %}">Visit our FAQs</a></p>
+
+        </div>
+    </article>
 
 
     {{ content }}
