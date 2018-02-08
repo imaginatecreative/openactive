@@ -174,7 +174,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row invert-2" id="mentors">
+    <article class="title-row" id="mentors">
         <h2 class="sub-heading-two">Mentors</h2>
         {% assign sortedPosts = site.mentors | sort: 'title' %}
         {% for post in sortedPosts %}
@@ -218,7 +218,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row steps collapse-bottom">
+    <article class="title-row steps collapse-bottom-with-pad invert-2">
         <h2 class="sub-heading-two">How we select startups</h2>
         <div class="three">
             <figure>
@@ -227,17 +227,12 @@ layout: default-accelerator
             </figure>
         </div>
         <div class="three">
-            <h3>OR</h3>
-        </div>
-        <div class="three">
             <figure>
                 {% include two.svg %}
                 <figcaption>f2f 4-day bootcamp and pitch in London for shortlisted startups</figcaption>
             </figure>
         </div>
-    </article>
-    <article class="steps">
-        <div class="one">
+        <div class="three">
             <figure>
                 {% include three.svg %}
                 <figcaption>Up to 10 selected startups invited to join the programme by an expert panel</figcaption>
@@ -245,7 +240,7 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="title-row invert-3">
+    <article class="title-row invert-5">
         <h2 class="sub-heading-two">Timeline</h2>
         <div class="one">
             {% include timelinelandscapetext.svg %}
@@ -281,7 +276,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row collapse-bottom invert-4">
+    <article class="title-row collapse-bottom invert-">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
             <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>

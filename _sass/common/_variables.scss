@@ -208,11 +208,12 @@ $globalEight: $brand-eight;
 
   }
   .featured{
+    padding: 1rem 0 2rem 0;
     background-color: $globalFive;
   }
   .invert{
     background-color: $globalFive;
-    padding: 1rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     .sub-heading-two {
       color: $white;
     }
@@ -249,6 +250,10 @@ $globalEight: $brand-eight;
   .invert-5{
     @extend .invert;
     background-color: $logo-six;
+  }
+  .invert-5{
+    @extend .invert;
+    background-color: $brand-two;
   }
 }
 

@@ -149,7 +149,7 @@
     }
   }
   #mentors {
-    padding:2rem;
+    padding:4rem 0;
     .six {
       text-align: center;
       position: relative;
@@ -167,11 +167,13 @@
       }
       .svg.twitter {
         width: 20px;
+        height: 20px;
         fill: $brand-one;
       }
 
       .svg.linkedin {
         width: 20px;
+        height: 20px;
         fill: $brand-one;
       }
 
