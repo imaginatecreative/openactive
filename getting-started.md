@@ -34,7 +34,7 @@ strapline: Discover how to build unlimited reach for your activities
 #### Booking Systems
 Search our list of OpenActive enabled system, to find the activity providers already benefiting from our initiative.
 
-[Booking Systems]( {{ site.baseurl }}{% link booking-engines.md %}){:class="button-primary" }
+[Enabled Booking Systems]( {{ site.baseurl }}{% link booking-engines.md %}){:class="button-primary" }
 
 
 </div>
