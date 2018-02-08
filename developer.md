@@ -72,13 +72,13 @@ Explore the dashboard to find the data you need, identify which feeds conform to
 </article>
 
 <article class="call_to_action title-row">
-<h2 class="sub-heading-two">Resources</h2>
+<h2 class="sub-heading-two">Resource</h2>
 
 <div class="subgrid">
 <div class="four">
 
-### How to Guides
-Detailed Step-by-step guidance to help you quickly make the most of the OpenAactive’s data.
+### How-to Guides
+Detailed step-by-step guidance to help you quickly make the most of OpenActive’s data.
 
 [Discover More]( {{ site.baseurl }}{% link how-to.md %}){: .link }
 
@@ -100,7 +100,7 @@ Dive into the detail by looking through our standards documentation and best pra
 <div class="four">
 
 ### Tutorials
-Guidance for developers on getting started, to help you learn how to publish and use your data to benefit your organisation.
+Guidance for developers on getting started, to help you learn how to publish and use your data to benefit your organisation. 
 [Discover More]( {{ site.baseurl }}{% link tutorials.md %}){: .link }
 
 </div>
