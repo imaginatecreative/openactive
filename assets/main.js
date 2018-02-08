@@ -1,66 +1,66 @@
 $(document).ready(function () {
     (function ($) {
+        if ($('body').hasClass('.accelerator-template')) {
+            var el = document.querySelector('.years');
+            od = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            od.update(5);
 
-        var el = document.querySelector('.years');
-        od = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        od.update(5);
+            var el = document.querySelector('.startups');
+            startupsod = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            startupsod.update(124);
 
-        var el = document.querySelector('.startups');
-        startupsod = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        startupsod.update(124);
+            var el = document.querySelector('.world');
+            worldod = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            worldod.update(24);
 
-        var el = document.querySelector('.world');
-        worldod = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        worldod.update(24);
+            var el = document.querySelector('.cohorts');
+            cohortsod = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            cohortsod.update(23);
 
-        var el = document.querySelector('.cohorts');
-        cohortsod = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        cohortsod.update(23);
+            var el = document.querySelector('.investment');
+            investmentod = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            investmentod.update(30);
 
-        var el = document.querySelector('.investment');
-        investmentod = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        investmentod.update(30);
-
-        var el = document.querySelector('.jobs');
-        jobsod = new Odometer({
-            el: el,
-            value: 333555,
-            // Any option (other than auto and selector) can be passed in here
-            format: '',
-            theme: 'default'
-        });
-        jobsod.update(400);
-
+            var el = document.querySelector('.jobs');
+            jobsod = new Odometer({
+                el: el,
+                value: 333555,
+                // Any option (other than auto and selector) can be passed in here
+                format: '',
+                theme: 'default'
+            });
+            jobsod.update(400);
+        }
         $(".slidingDiv").hide();
         $('.show_hide').on("click", function () {
             $(this).children('.slidingDiv').slideToggle();
