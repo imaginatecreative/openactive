@@ -11,8 +11,31 @@
           transition-property: transform, -webkit-transform;
           -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-          margin:20px;
-
+          margin: 20px;
+          svg {
+            margin-top: 0;
+            transform: scale(1.1);
+            .opendata-1 {
+            }
+            .officespace-1 {
+            }
+            .mentorship-1 {
+            }
+            .workshop-1 {
+            }
+            .oneonone-1 {
+            }
+            .perks-1 {
+            }
+            .networking-1 {
+            }
+            .partners-1 {
+            }
+            .investors-1 {
+            }
+            .demo-1 {
+            }
+          }
           figcaption {
             position: absolute;
             top: 0;
@@ -42,7 +65,7 @@
         &:hover figure {
           // -webkit-transform: translateY(-50px);
           // transform: translateY(-50px);
-         
+
         }
         &:hover figure figcaption {
 
@@ -57,11 +80,33 @@
       }
     }
   }
+  .experience {
+    .six{
+      figure{
+        text-align: center;
+        svg{
+          .years-1{}
+          .startup-1{}
+          .world-1{}
+          .cohorts-1{}
+          .investment-1{}
+          .jobs-1{  }
+        }
+      }
+    }
+  }
+  .faq-snippet{
+    .two{
+      h5{
+        color: $header-color;
+      }
+    }
 
+  }
   #mentors {
 
     .four {
-      .svg.twitter  {
+      .svg.twitter {
         width: 30px;
         fill: $brand-one;
       }

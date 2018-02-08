@@ -32,6 +32,7 @@ layout: home
 
 {% include case-study.html %}
 
+<<<<<<< HEAD
 <article class="call_to_action--full-width startup">
 <h2 class="sub-heading-two">Join</h2>
 <div class="one">
@@ -54,6 +55,8 @@ Millions find it hard to stay active. OpenActive Accelerator calls for startups 
 </article>
 
 
+=======
+>>>>>>> george
 
 
 
@@ -214,7 +217,25 @@ Open data is data that anyone can access, use or share. Simple as that. When big
 
 
 
+<article class="call_to_action--full-width startup">
+<h2 class="sub-heading-two">Start Ups</h2>
+<div class="one">
 
+### The Accelerator Programme
+Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
+
+[Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+
+
+</div>
+
+<figure>
+<div class="triangle"></div>
+<div class="stripe"></div>
+<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+</figure>
+
+</article>
 
 
 
