@@ -41,6 +41,7 @@ Search our list of OpenActive enabled system, to find the activity providers alr
 <div class="two">
 <nav class="subgrid">
 {% for post in site.booking_engines %}
+{% if post.is_enabled %}
 {% assign theImage = post.thumbnail_image %}
 {% if post.member %}
 {% assign theMember = site.members | where:"title", post.member  | first %}
@@ -50,7 +51,7 @@ Search our list of OpenActive enabled system, to find the activity providers alr
 <a  href="{{ post.url | relative_url }}"><img src="{{ theImage  | relative_url}}"/></a>
 </div>
 
-
+{% endif %}
 {% endfor %}
 </nav>
 
