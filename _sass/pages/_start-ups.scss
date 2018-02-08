@@ -71,6 +71,11 @@
             box-sizing: border-box;
             text-align: center;
             margin: 0;
+            border-radius: 50%;
+            background-color: rgba($brand-five,0.7);
+            padding: 5px;
+            color: white;
+
           }
         }
         &:hover figure {
@@ -87,6 +92,8 @@
           transition: opacity 0.1s, -webkit-transform 0.4s;
           transition: transform 0.4s, opacity 0.1s;
           transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+
+          transform: scale(1.2);
         }
       }
     }
@@ -124,7 +131,12 @@
 
     }
   }
+  .faq-title{
+    padding:4rem 0 0 0;
+  }
   .faq-snippet {
+    padding: 0 0 4rem 0;
+
     .two {
       h5 {
         margin-bottom:1rem;
@@ -133,6 +145,7 @@
     .show_hide{
       border-bottom: 1px solid white;
       margin-bottom: 1rem;
+      cursor: pointer;
     }
     .slidingDiv > p{
       margin-top: 0;
@@ -177,14 +190,29 @@
       }
 
       .svg.linkedin {
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
         fill: $brand-one;
       }
 
       figcaption {
         font-size: .9rem;
         line-height: 1.2;
+        p{
+          &:nth-child(1){
+            margin-top: 0;
+            font-size: $header-size / 3.75;
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+            letter-spacing: 0;
+            font-weight: 800;
+            line-height: $header-line-height / 1.2;
+          }
+          &:nth-child(2){
+            margin-top: 0;
+            font-size: $header-size /3.75;
+          }
+        }
       }
     }
   }
@@ -205,6 +233,16 @@
     }
     .one{
       &:nth-child(2){
+      }
+    }
+  }
+  .partners{
+    .four{
+      figure{
+        text-align: center;
+        img{
+          display: inline-block;
+        }
       }
     }
   }

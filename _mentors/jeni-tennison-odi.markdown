@@ -1,5 +1,6 @@
 ---
-title: Jeni Tennison, ODI
+title: Jeni Tennison
+role: ODI
 date: 2018-02-06 17:53:00 Z
 thumbnail_image: "/uploads/jenni_tennison.jpg"
 twitter: https://twitter.com/JeniT

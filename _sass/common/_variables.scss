@@ -154,6 +154,7 @@ $globalEight: $brand-eight;
   .sub-heading-two {
     color: $global;
   }
+
   .button-primary {
     background-color: $globalFive;
     &:hover{
@@ -170,6 +171,7 @@ $globalEight: $brand-eight;
     border-color: $globalFive;
     color: $white;
   }
+
   .button-secondary {
     background-color: $globalFour;
     &:hover{
@@ -254,6 +256,15 @@ $globalEight: $brand-eight;
   .invert-5{
     @extend .invert;
     background-color: $brand-two;
+  }
+  .blend-5{
+    @extend .invert;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#433d90+53,146ebb+100 */
+    background: #433d90; /* Old browsers */
+    background: -moz-linear-gradient(top, #433d90 53%, #146ebb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #433d90 53%,#146ebb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #433d90 53%,#146ebb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#433d90', endColorstr='#146ebb',GradientType=0 ); /* IE6-9 */
   }
 }
 
@@ -375,6 +386,7 @@ article.use, div.use {
   .sub-heading-two {
     color: $usingThree;
   }
+
   .button-primary {
     background-color: $usingThree;
     &:hover{
@@ -386,6 +398,7 @@ article.use, div.use {
     border-color: $usingThree;
     color: $usingThree;
   }
+
   .button-secondary {
     background-color: $usingFive;
     &:hover{

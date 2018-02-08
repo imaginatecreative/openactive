@@ -1,5 +1,6 @@
 ---
-title: Cathy White, CEW Comms
+title: Cathy White
+role: CEW Comms
 date: 2018-02-06 17:45:00 Z
 thumbnail_image: "/uploads/cathet_w.jpg"
 twitter: https://twitter.com/cathywhite10

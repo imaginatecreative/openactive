@@ -8,7 +8,8 @@ layout: default-accelerator
              style="background: linear-gradient(to right, #181242 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center 43% / cover no-repeat;">
         <div class="two">
             <h1>{{page.title}}</h1>
-            <p class="hero-sub">6.2 million adults are fairly active but don’t exercise enough to improve their health and
+            <p class="hero-sub">6.2 million adults are fairly active but don’t exercise enough to improve their health
+                and
                 wellbeing.</p>
             <h6>Sport England</h6>
             <p><a href="https://www.sportengland.org/media/12458/active-lives-adult-may-16-17-report.pdf"
@@ -160,7 +161,9 @@ layout: default-accelerator
         <div class="six">
             <figure>
                 {% include investment.svg %}
-                <span>£</span><div class="odometer investment">0</div><span>m</span>
+                <span>£</span>
+                <div class="odometer investment">0</div>
+                <span>m</span>
                 <figcaption>investment raised</figcaption>
             </figure>
         </div>
@@ -184,7 +187,10 @@ layout: default-accelerator
 
             <figure>
                 <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
-                <figcaption>{{ post.title | escape }}</figcaption>
+                <figcaption>
+                <p><strong>{{ post.title | escape }}</strong></p>
+                <p>{{ post.role | escape }} </p>
+                </figcaption>
                 <div class="social-links">
                     {% if post.twitter %}
 
@@ -276,7 +282,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row collapse-bottom invert-3">
+    <article class="faq-title title-row collapse-bottom invert-3">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
             <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>
@@ -320,7 +326,7 @@ layout: default-accelerator
     </article>
 
 
-    <article class="title-row">
+    <article class="title-row partners">
         <h2 class="sub-heading-two">Supporters and data providers</h2>
 
         {% assign sortedPosts = site.partners | sort: 'title' %}

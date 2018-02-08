@@ -799,18 +799,22 @@ html.no-cssgrid {
 
 .accelerator-header {
   border-bottom: 1rem solid $brand-five;
-
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: [full-start] minmax(calc(calc(100% - 1008px) / 2), 1fr) [main-start] repeat(12, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1008px) / 2), 1fr) [full-end];
   align-items: center;
-
+  min-height: 70px;
+  @media only screen and (max-width: 1400px) {
+    grid-row-gap: 0!important;
+  }
   .g-item {
     &.logo-accelerator {
       grid-column-start: 1;
       grid-column-end: 1;
       grid-row: 1;
       align-self: center;
+      justify-content: end;
+      display: inherit;
     }
     &.headline-accelerator {
       grid-column-start: 2;
@@ -832,17 +836,28 @@ html.no-cssgrid {
       align-self: center;
     }
     @media only screen and (max-width: 1400px) {
-      &.logo {
+      &.logo-accelerator {
         grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row: 1;
+        grid-column-end: 6;
+        grid-row: 1/ span 1;
       }
-      &.headline {
+      &.headline-accelerator {
         grid-column-start: 2;
         grid-column-end: 12;
+        grid-row: 2/ 2;
+
+      }
+      &.social-button-accelerator {
+        grid-row: 1/ span 1;
       }
       &.button-accelerator {
         grid-column-start: 12;
+        grid-row: 2/ 2;
+        margin: 0 0 1rem 0;
+        padding-right: 0;
+        justify-content: end;
+        display: inherit;
+
       }
     }
   }
@@ -850,9 +865,14 @@ html.no-cssgrid {
     margin: 0;
     a {
       svg {
-        width: 100%;
-        padding: 1rem;
+        width:100%;
+        min-width: 200px;
+        max-width: 250px;
+        padding: 1rem 0 0 1rem;
         box-sizing: border-box;
+        @media only screen and (max-width: 1400px) {
+          padding: 1rem 0 0 0;
+        }
       }
     }
   }
@@ -873,7 +893,6 @@ html.no-cssgrid {
     }
     #social {
       margin-right: 1rem;
-
     }
     .button-primary {
       text-align: center;

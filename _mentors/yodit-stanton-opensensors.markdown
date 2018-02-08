@@ -1,5 +1,6 @@
 ---
-title: Yodit Stanton, opensensors
+title: Yodit Stanton
+role: opensensors
 date: 2018-02-08 06:36:00 Z
 thumbnail_image: "/uploads/yodit.jpg"
 twitter: 'https://twitter.com/yoditstanton '
