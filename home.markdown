@@ -39,7 +39,8 @@ layout: home
 ### The Accelerator Programme
 Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
 
-[Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+<p><a href="{{ site.baseurl }}{% link accelerator.md %}" class="button-primary" onclick="gtag('event', 'primary ctas', {'homepage': 'clicked', 'event_label': 'accelerator cta'});">Find out more</a></p>
+
 
 
 </div>
