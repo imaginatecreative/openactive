@@ -58,9 +58,9 @@
         <div class="social-button">
             {% include social.html %}
             <div>
-                <a class="button-primary startup" href="{{ site.baseurl }}{% link accelerator.md %}"><span>Accelerator</span></span>
+                <a class="button-primary startup" href="{{ site.baseurl }}{% link accelerator.md %}" onclick="gtag('event', 'top level ctas', {'header': 'clicked', 'event_label': 'accelerator'});"><span>Accelerator</span></span>
                 </a>
-                <a class="button-primary" href="{{ site.baseurl }}{% link join.md %}"><span>Join</span></a>
+                <a class="button-primary" href="{{ site.baseurl }}{% link join.md %}" onclick="gtag('event', 'top level ctas', {'header': 'clicked', 'event_label': 'join'});"><span>Join</span></a>
             </div>
         </div>
     </aside>
