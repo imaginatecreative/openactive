@@ -63,8 +63,8 @@ defaults:
     is_featured: false
     thumbnail_image: "/uploads/placeholder.png"
     twitter: 
-    linkedin:
-    role:
+    linkedin: 
+    role: 
 - scope:
     path: ''
     type: partners
