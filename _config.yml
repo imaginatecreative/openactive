@@ -3,7 +3,7 @@ title: OpenActive
 timezone: UTC
 collections:
   booking_engines:
-    title: Booking Engines
+    title: Booking Systems
     output: true
     member: ''
   case_studies:
