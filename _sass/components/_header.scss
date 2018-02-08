@@ -1,7 +1,7 @@
 /*********************************/
 /*********************************/
 //GRID LAYOUT STYLES FOR SCREENS OVER 1000px
-html.cssgrid {
+html.cssgrid, html {
   @supports (display: grid) {
 
     @media only screen and (min-width: 1000px) {
@@ -797,11 +797,76 @@ html.no-cssgrid {
   }
 }
 
-.accelerator-header#mainHeader {
-  .headline {
+.accelerator-header {
+  border-bottom: 1rem solid $brand-five;
+
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: [full-start] minmax(calc(calc(100% - 1008px) / 2), 1fr) [main-start] repeat(12, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1008px) / 2), 1fr) [full-end];
+  align-items: center;
+
+  .g-item {
+    &.logo-accelerator {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row: 1;
+      align-self: center;
+    }
+    &.headline-accelerator {
+      grid-column-start: 2;
+      grid-column-end: 11;
+      grid-row: 1;
+      display: grid;
+      align-self: center;
+    }
+    &.social-button-accelerator {
+      grid-column-start: 13;
+      grid-column-end: 14;
+      grid-row: 1;
+      align-self: center;
+    }
+    &.button-accelerator {
+      grid-column-start: 14;
+      grid-column-end: 14;
+      grid-row: 1;
+      align-self: center;
+    }
+    @media only screen and (max-width: 1400px) {
+      &.logo {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row: 1;
+      }
+      &.headline {
+        grid-column-start: 2;
+        grid-column-end: 12;
+      }
+      &.button-accelerator {
+        grid-column-start: 12;
+      }
+    }
+  }
+  #logo-accelerator {
+    margin: 0;
+    a {
+      svg {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .headline-accelerator {
+    font-family: $font-family;
+    font-size: $header-size / 2;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    color: $brand-blue;
+    border: none;
   }
   .button-accelerator {
-    padding-right:1rem;
+    padding-right: 1rem;
     div.social-button {
       display: inline-flex;
       align-items: center;
@@ -823,4 +888,8 @@ html.no-cssgrid {
     }
   }
 }
+#sticky-phantom-accelerator{
+  height:70px;
+}
+
 
