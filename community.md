@@ -68,17 +68,34 @@ Our community is dynamic and self-supporting, allowing us to tap into an ever gr
 </div>
 </article>
 
-<article>
-<div class="one">
+<article class="post-list title-row">
+<h2 class="sub-heading-two"> Community News</h2>
+{% for post in site.posts limit:2 %}
+{% if post.categories contains "Community" %}
+<div class="two" id="post-{{ forloop.index }}">
+<figure role="group">
+<img src="{{post.thumbnail_image | relative_url}}" alt="{{ post.title | escape }}-post-thumbnail">
+</figure>
+<h3>{{ post.title | escape }}</h3>
+<div class="subgrid brand-one-b">
+<div class="two twoleft">
 
-### Featured News 
-+ A Featured Article
-    + A recent interesting article that a user would find engaging 
-        + Links to [News Detail]( {{ site.baseurl }}{% link _posts/2017-07-06-build-a-website.md  %})  
-    + Links to [All News]( {{ site.baseurl }}{% link blog.md %})  
-  
+{{ post.excerpt }}
+
+<a class="button-primary" href="{{ post.url | relative_url }}">Read Post</a>
 </div>
+
+<div class="two twoleft">
+{% include share-page.html %}
+{{post.date}}
+{{post.author}}
+</div>
+</div>
+</div>
+{% endif %}
+{% endfor %}
 </article>
+
 
 
 <article>

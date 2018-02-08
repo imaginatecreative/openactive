@@ -2,7 +2,7 @@
 title: OpenActive Champions assemble
 date: 2018-02-06 12:17:00 Z
 categories:
-- jekyll
+- Community
 - update
 is_featured: true
 thumbnail_image: "/uploads/champions.png"
