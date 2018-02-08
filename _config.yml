@@ -85,6 +85,7 @@ defaults:
   values:
     layout: booking-engine
     is_featured: false
+    is_enabled: false
     thumbnail_image: "/uploads/placeholder.png"
     website: Web address
 compress_html:

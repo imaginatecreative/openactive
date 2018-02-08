@@ -43,11 +43,6 @@ Search our list of OpenActive enabled system, to find the activity providers alr
 {% for post in site.booking_engines %}
 {% assign theImage = post.thumbnail_image %}
 
-{% if post.member %}
-{% assign theMember = site.members | where:"title", post.member  | first %}
-{% assign theImage = theMember.thumbnail_image %}
-{% endif %}
-
 <div class="four case-tab" data-tab="{{ forloop.index }}" markdown="0" >
 <a  href="{{ post.url | relative_url }}"><img src="{{ theImage  | relative_url}}"/></a>
 </div>
