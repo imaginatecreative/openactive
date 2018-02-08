@@ -3,9 +3,8 @@ title: OpenActive
 timezone: UTC
 collections:
   booking_engines:
-    title: Booking Engines
+    title: Booking Systems
     output: true
-    member: ''
   case_studies:
     title: Case Studies
     output: true
@@ -54,6 +53,7 @@ defaults:
     layout: case-study
     is_featured: false
     thumbnail_image: "/uploads/placeholder.png"
+    member: 
     strapline: 
 - scope:
     path: ''
@@ -64,6 +64,13 @@ defaults:
     thumbnail_image: "/uploads/placeholder.png"
     twitter: 
     linkedin: 
+- scope:
+    path: ''
+    type: partners
+  values:
+    layout: partner
+    is_featured: false
+    thumbnail_image: "/uploads/placeholder.png"
 - scope:
     path: ''
     type: members
@@ -78,7 +85,9 @@ defaults:
   values:
     layout: booking-engine
     is_featured: false
+    is_enabled: false
     thumbnail_image: "/uploads/placeholder.png"
+    member: 
     website: Web address
 compress_html:
   blanklines: false
