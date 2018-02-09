@@ -812,8 +812,8 @@ html.no-cssgrid {
   z-index: 200;
   transition: height 0.5s ease;
   @media only screen and (max-width: 1400px) {
-    grid-row-gap: 0!important;
-    padding-top: 0;
+    grid-gap: 0!important;
+    padding-top: 0.5rem;
   }
   .g-item {
     &.logo-accelerator {
@@ -858,14 +858,17 @@ html.no-cssgrid {
 
       }
       &.social-button-accelerator {
-        grid-row: 1/ span 1;
+        grid-column-start: 11;
+        grid-column-end: 13;
       }
       &.button-accelerator {
         grid-column-start: 12;
+        grid-column-end: 15;
         //grid-row: 2/ 2;
-        margin: 0 0 1rem 0;
+        margin: 0;
         padding-right: 0;
-        justify-content: end;
+        justify-content: center;
+        align-self: center;
         display: inherit;
 
       }

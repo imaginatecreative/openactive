@@ -1,8 +1,9 @@
-.accelerator-template{
-  .large-screen-side-nav.on-scroll{
+.accelerator-template {
+  .large-screen-side-nav.on-scroll {
     display: none;
   }
 }
+
 .start-up-components {
   #hover-blocks {
     .one {
@@ -72,7 +73,7 @@
             text-align: center;
             margin: 0;
             border-radius: 50%;
-            background-color: rgba($brand-five,0.7);
+            background-color: rgba($brand-five, 0.7);
             padding: 5px;
             color: white;
 
@@ -98,10 +99,10 @@
       }
     }
   }
-  .featured{
-    .quote{
+  .featured {
+    .quote {
       margin-top: 0;
-      svg{
+      svg {
         opacity: 0;
       }
     }
@@ -112,7 +113,7 @@
         text-align: center;
         svg {
           .years-1, .startup-1, .world-1, .cohorts-1, .investment-1, .jobs-1 {
-            fill:$brand-five;
+            fill: $brand-five;
           }
           .years-1 {
           }
@@ -131,51 +132,51 @@
 
     }
   }
-  .faq-title{
-    padding:4rem 0 0 0;
+  .faq-title {
+    padding: 4rem 0 0 0;
   }
   .faq-snippet {
     padding: 0 0 4rem 0;
 
     .two {
       h5 {
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
       }
     }
-    .show_hide{
+    .show_hide {
       border-bottom: 1px solid white;
       margin-bottom: 1rem;
       cursor: pointer;
     }
-    .slidingDiv > p{
+    .slidingDiv > p {
       margin-top: 0;
-      margin-bottom:1rem;
+      margin-bottom: 1rem;
     }
   }
   .steps {
-    .one,.three{
+    .one, .three {
       text-align: center;
     }
-    .three{
-      &:nth-child(3){
+    .three {
+      &:nth-child(3) {
         align-self: center;
       }
     }
-    figure{
+    figure {
       max-width: 200px;
       display: inline-block;
     }
   }
   #mentors {
-    padding:4rem 0;
+    padding: 4rem 0;
     .six {
       text-align: center;
       position: relative;
-      img{
+      img {
         border-radius: 50%;
       }
-      .social-links{
-        width:100%;
+      .social-links {
+        width: 100%;
         display: inline-flex;
         align-content: center;
         justify-content: space-evenly;
@@ -198,8 +199,8 @@
       figcaption {
         font-size: .9rem;
         line-height: 1.2;
-        p{
-          &:nth-child(1){
+        p {
+          &:nth-child(1) {
             margin-top: 0;
             font-size: $header-size / 3.75;
             text-transform: uppercase;
@@ -208,7 +209,7 @@
             font-weight: 800;
             line-height: $header-line-height / 1.2;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-top: 0;
             font-size: $header-size /3.75;
           }
@@ -216,31 +217,34 @@
       }
     }
   }
-  .intro-text{
+  .intro-text {
     position: relative;
-    .line-graphic{
+    .line-graphic {
       display: inline-block;
       right: 0;
       bottom: 0;
       width: 380px;
-        svg{
-          position: absolute;
-          height: 50%;
-          bottom: 0;
-          /* max-height: 250px; */
-          right: 0;
-        }
+      svg {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        /* max-height: 250px; */
+        right: 0;
+      }
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
     }
-    .one{
-      &:nth-child(2){
+    .one {
+      &:nth-child(2) {
       }
     }
   }
-  .partners{
-    .four{
-      figure{
+  .partners {
+    .four {
+      figure {
         text-align: center;
-        img{
+        img {
           display: inline-block;
         }
       }
