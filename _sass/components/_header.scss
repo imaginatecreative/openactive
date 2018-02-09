@@ -475,7 +475,7 @@ html.no-cssgrid {
 //LAYOUTS FOR SCREENS UNDER 1000PX
 
 @media only screen and (max-width: 1000px) {
-  body > header {
+  body > header:not(.accelerator-header) {
     position: fixed;
     border-bottom: 1px solid $gray;
     display: flex;
@@ -805,8 +805,15 @@ html.no-cssgrid {
   align-items: center;
   min-height: 70px;
   padding: 2rem 0 0.3rem 0;
+  position: fixed;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: $white;
+  z-index: 200;
+  transition: height 0.5s ease;
   @media only screen and (max-width: 1400px) {
     grid-row-gap: 0!important;
+    padding-top: 0;
   }
   .g-item {
     &.logo-accelerator {
@@ -843,9 +850,11 @@ html.no-cssgrid {
         grid-row: 1/ span 1;
       }
       &.headline-accelerator {
-        grid-column-start: 2;
-        grid-column-end: 12;
-        grid-row: 2/ 2;
+        //grid-column-start: 2;
+        //grid-column-end: 12;
+        ////grid-row: 2/ 2;
+        //margin: 0 0 1rem 0;
+        display: none;
 
       }
       &.social-button-accelerator {
@@ -853,7 +862,7 @@ html.no-cssgrid {
       }
       &.button-accelerator {
         grid-column-start: 12;
-        grid-row: 2/ 2;
+        //grid-row: 2/ 2;
         margin: 0 0 1rem 0;
         padding-right: 0;
         justify-content: end;
@@ -909,6 +918,9 @@ html.no-cssgrid {
 }
 #sticky-phantom-accelerator{
   height:70px;
-}
+  @media only screen and (max-width: 1400px) {
+
+  }
+  }
 
 
