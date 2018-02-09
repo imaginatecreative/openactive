@@ -305,6 +305,7 @@ layout: default-accelerator
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
                 {% for post in aboutAccelerator limit:3 %}
+                {% if post.is_featured %}
 
                 <div class=" show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
@@ -312,6 +313,7 @@ layout: default-accelerator
                         {{post.content}}
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
