@@ -77,6 +77,13 @@ defaults:
     thumbnail_image: "/uploads/placeholder.png"
 - scope:
     path: ''
+    type: dataproviders
+  values:
+    layout: dataprovider
+    is_featured: false
+    thumbnail_image: "/uploads/placeholder.png"
+- scope:
+    path: ''
     type: members
   values:
     layout: member
