@@ -215,13 +215,14 @@ $globalEight: $brand-eight;
   }
   .invert{
     background-color: $globalFive;
-    padding: 2rem 0 2rem 0;
+    padding: 4rem 0;
+
     .sub-heading-two {
       color: $white;
     }
     svg{
       path{
-        fill:$white;
+       // fill:$white;
       }
     }
     * {
@@ -254,7 +255,7 @@ $globalEight: $brand-eight;
     background-color: $logo-six;
   }
   .invert-5{
-    @extend .invert;
+   // @extend .invert;
     background-color: $brand-two;
   }
   .blend-5{

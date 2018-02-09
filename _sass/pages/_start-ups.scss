@@ -5,6 +5,10 @@
 }
 
 .start-up-components {
+  //article{
+  //  padding: 4rem 0;
+  //}
+
   #hover-blocks {
     .one {
       .five {
@@ -99,6 +103,7 @@
     }
   }
   .featured {
+    padding:0;
     .quote {
       margin-top: 0;
       svg {
@@ -200,15 +205,17 @@
     .three {
       &:nth-child(3) {
         align-self: center;
+
       }
     }
-    figure {
-      max-width: 200px;
+    figure{
+      width: 150px;
+
       display: inline-block;
     }
   }
   #mentors {
-    padding: 4rem 0;
+
     .six {
       text-align: center;
       position: relative;
@@ -267,7 +274,20 @@
       }
     }
   }
-  .intro-text {
+  #selection {
+    align-items: stretch;
+    .three {
+      background-color:$globalTwo;
+      border-radius:10px;
+      padding:1rem;
+
+      figcaption {
+        font-weight:700;
+      }
+    }
+  }
+  .intro-text{
+
     position: relative;
     .line-graphic {
       display: inline-block;
