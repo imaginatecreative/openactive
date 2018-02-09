@@ -159,10 +159,11 @@
     .three{
       &:nth-child(3){
         align-self: center;
+
       }
     }
     figure{
-      max-width: 200px;
+      width: 150px;
       display: inline-block;
     }
   }
@@ -216,6 +217,22 @@
       }
     }
   }
+
+  #selection {
+    align-items: stretch;
+    .three {
+      background-color:$globalTwo;
+      border-radius:10px;
+      padding:1rem;
+
+      figcaption {
+        font-weight:700;
+      }
+    }
+  }
+
+
+
   .intro-text{
     position: relative;
     .line-graphic{
