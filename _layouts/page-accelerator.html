@@ -5,7 +5,7 @@ layout: default-accelerator
 <div class="page global-template start-up-components">
 
     <article class="hero--large collapse-bottom"
-             style="background: linear-gradient(to right, #181242 0%, transparent 70%),  url({{site.baseurl}}{{page.thumbnail_image}})center 43% / cover no-repeat;">
+             style="background: linear-gradient(to right, #3B3089 0%, transparent 100%),  url({{site.baseurl}}{{page.thumbnail_image}})center 43% / cover no-repeat;">
         <div class="two">
             <p class="hero-sub">6.2 million adults are fairly active but don’t exercise enough to improve their health
                 and
@@ -16,7 +16,7 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="intro-text invert-3">
+    <article class="intro-text invert">
         <div class="one">
             <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
                 on many aspects of people’s
@@ -30,7 +30,7 @@ layout: default-accelerator
                 different stakeholders in the ecosystem, such as gyms and sport clubs.</p>
         </div>
         <div class="one">
-            <a class="button-primary--ghostlarge" href="">APPLY NOW</a>
+            <a class="button-primary--ghostlarge" target="_blank" href="https://www.f6s.com/openactiveaccelerator/apply">APPLY NOW</a>
         </div>
         <i class="line-graphic">{% include line-graphic-corner.svg %}</i>
     </article>
@@ -185,6 +185,9 @@ layout: default-accelerator
         </div>
         <div class="two">
             <blockquote class="featured">
+                <i class="quote">
+                    {% include quote.svg %}
+                </i>
                 <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build
                     a product that consistently "wows" the householders that use our platform and helps them live more
                     happily together.</p>
@@ -279,7 +282,8 @@ layout: default-accelerator
     <article class="title-row invert-5">
         <h2 class="sub-heading-two">Timeline</h2>
         <div class="one">
-            {% include Timeline3.svg %}
+            <!--{% include Timeline3.svg %}-->
+            <img src="{{ site.baseurl }}/assets/images/TimelineNew.png">
         </div>
     </article>
 
@@ -287,7 +291,7 @@ layout: default-accelerator
         <div class="subgrid">
             <div class="three blue-gradient-bc">
                 <h4>Apply as a startup</h4>
-                <a class="button-primary" href="#">Start</a>
+                <a class="button-primary" target="_blank" rel="noopener" href="https://www.f6s.com/openactiveaccelerator/apply">Start</a>
             </div>
             <div class="three blue-gradient-bc">
                 <h4>Become a mentor </h4>

@@ -206,14 +206,14 @@ $globalEight: $brand-eight;
     }
   }
   blockquote.featured{
-  background-color: $globalFive;
+  background-color: $global;
 
   }
   .featured{
-    background-color: $globalFive;
+    background-color: $global;
   }
   .invert{
-    background-color: $globalFive;
+    background-color: $global;
     padding: 4rem 0;
 
     .sub-heading-two {
@@ -228,22 +228,31 @@ $globalEight: $brand-eight;
       color: $white;
     }
     a.button-primary{
-      background-color: $globalSix;
+      background-color: $brand-two;
+      &:hover{
+        background-color: transparent;
+        border-color: white;
+        color: white;
+      }
     }
     a.button-primary--ghost{
       background-color: transparent;
       border-color: white;
       color: white;
+      &:hover{
+        border-color:transparent;
+        background-color: $brand-two;
+      }
 
     }
   }
   .invert-2{
     @extend .invert;
-    background-color: $logo-four;
+    background-color: $global;
   }
   .invert-3{
     @extend .invert;
-    background-color: $brand-five;
+    background-color: $global;
   }
   .invert-4{
     @extend .invert;
