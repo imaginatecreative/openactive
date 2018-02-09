@@ -23,6 +23,9 @@ collections:
   partners:
     title: Partners
     output: true
+  dataproviders:
+    title: Data Providers
+    output: true
   posts:
     title: Posts
     output: true

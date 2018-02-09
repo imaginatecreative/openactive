@@ -16,44 +16,44 @@
         figure {
           position: relative;
           margin: 20px;
-           svg {
-             margin-top: 0;
-             .opendata-1, .officespace-1, .mentorship-1, .mentorship-2, .workshop-1, .oneonone-1, .perks-1, .networking-1, .partners-1, .investors-1, .demo-1 {
-               //fill: $brand-five;
-               //stroke: $brand-five;
-             }
-             .opendata-3 {
-               fill:$global;
-             }
-             .officespace-3 {
-               fill:$global;
-             }
-             .mentorship-3 {
-               fill:$global;
+          svg {
+            margin-top: 0;
+            .opendata-1, .officespace-1, .mentorship-1, .mentorship-2, .workshop-1, .oneonone-1, .perks-1, .networking-1, .partners-1, .investors-1, .demo-1 {
+              //fill: $brand-five;
+              //stroke: $brand-five;
+            }
+            .opendata-3 {
+              fill: $global;
+            }
+            .officespace-3 {
+              fill: $global;
+            }
+            .mentorship-3 {
+              fill: $global;
 
-             }
-             .workshops-3 {
-               fill:$global;
-             }
-             .oneonone-3 {
-               fill:$global;
-             }
-             .perks-3 {
-               fill:$global;
-             }
-             .networking-3 {
-               fill:$global;
-             }
-             .partners-3 {
-               fill:$global;
-             }
-             .investors-3 {
-               fill:$global;
-             }
-             .demo-3 {
-               fill:$global;
-             }
-           }
+            }
+            .workshops-3 {
+              fill: $global;
+            }
+            .oneonone-3 {
+              fill: $global;
+            }
+            .perks-3 {
+              fill: $global;
+            }
+            .networking-3 {
+              fill: $global;
+            }
+            .partners-3 {
+              fill: $global;
+            }
+            .investors-3 {
+              fill: $global;
+            }
+            .demo-3 {
+              fill: $global;
+            }
+          }
           figcaption {
             position: absolute;
             top: 0;
@@ -138,7 +138,7 @@
         }
       }
     }
-    blockquote{
+    blockquote {
       border-left: 1px solid white;
       padding-left: 2rem;
     }
@@ -203,7 +203,29 @@
           margin-left: 1%;
           margin-right: 0;
         }
-
+      }
+      @media only screen and (max-width: 700px) {
+        display: inline-block;
+        .five-steps {
+          width: 100%;
+          margin-bottom: 2rem;
+          &:nth-child(1) {
+          }
+          &:nth-child(2) {
+            svg {
+              transform: rotate(90deg);
+            }
+          }
+          &:nth-child(3) {
+          }
+          &:nth-child(4) {
+            svg {
+              transform: rotate(90deg);
+            }
+          }
+          &:nth-child(5) {
+          }
+        }
       }
       figure.five-steps {
         svg {

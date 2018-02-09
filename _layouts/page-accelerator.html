@@ -37,6 +37,7 @@ layout: default-accelerator
                 different stakeholders in the ecosystem, such as gyms and sport clubs.</p>
         </div>
         <div class="one">
+            <p>That's why we've launched the ODI's OpenActive Accelerator supported by Sport England.</p>
             <a class="button-primary--ghostlarge" target="_blank"
                onclick="gtag('event', 'accelerator ctas', {'hero': 'clicked', 'event_label': 'apply now'});"
                href="https://www.f6s.com/openactiveaccelerator/apply">APPLY NOW</a>
@@ -372,6 +373,23 @@ layout: default-accelerator
         <h2 class="sub-heading-two">Supporters and data providers</h2>
 
         {% assign sortedPosts = site.partners | sort: 'title' %}
+        {% for post in sortedPosts %}
+        {% assign theImage = post.thumbnail_image %}
+
+        <div class="four">
+            <figure>
+                <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
+            </figure>
+        </div>
+
+        {% endfor %}
+
+    </article>
+
+    <article class="title-row partners">
+        <h2 class="sub-heading-two">Data providers</h2>
+
+        {% assign sortedPosts = site.dataproviders | sort: 'title' %}
         {% for post in sortedPosts %}
         {% assign theImage = post.thumbnail_image %}
 
