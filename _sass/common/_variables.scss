@@ -221,7 +221,7 @@ $globalEight: $brand-eight;
     }
     svg{
       path{
-        fill:$white;
+       // fill:$white;
       }
     }
     * {
@@ -254,7 +254,7 @@ $globalEight: $brand-eight;
     background-color: $logo-six;
   }
   .invert-5{
-    @extend .invert;
+   // @extend .invert;
     background-color: $brand-two;
   }
   .blend-5{
