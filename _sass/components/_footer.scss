@@ -193,7 +193,17 @@ footer:not(.slim) {
     }
   }
 }
-
 .slim{
+  margin-top:2rem;
   border-top: 1px solid $gray;
+  article{
+    padding:2rem 0;
+    margin-bottom:0;
+    .two{
+      align-self: center;
+    }
+  }
+  img{
+    max-width: 200px;
+  }
 }
