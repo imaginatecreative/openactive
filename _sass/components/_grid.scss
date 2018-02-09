@@ -12,7 +12,7 @@
     @media only screen and (max-width: 700px) {
       grid-gap: 1rem;
     }
-    .one,.two,.three,.four{
+    .one, .two, .three, .four {
 
     }
     .one {
@@ -21,43 +21,100 @@
       transition-property: all;
       transition-duration: 0.2s;
       transition-timing-function: ease-in-out;
-      &.non-grid{
-        .five{
-          display:inline-block;
-          vertical-align: top;
-          margin-bottom: 2rem;
-          width:18%;
-          &:nth-child(5n+1) {
-            margin-left: 0;
-            margin-right: 1%;
-          }
-          &:nth-child(5n+2) {
-            margin-left: 1%;
-            margin-right: 1%;
-          }
-          &:nth-child(5n+3) {
-            margin-left: 1%;
-            margin-right: 1%;
-          }
-          &:nth-child(5n+4) {
-            margin-left: 1%;
-            margin-right: 1%;
-          }
-          &:nth-child(5n+5) {
-            margin-left: 1%;
-            margin-right: 0;
+      &.non-grid {
+        @media only screen and (max-width: 1100px) {
+          display: inherit;
+        }
+
+        .five {
+          @media only screen and (min-width: 1100px) {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 2rem;
+            width: 18%;
+            &:nth-child(5n+1) {
+              margin-left: 0;
+              margin-right: 1%;
+            }
+            &:nth-child(5n+2) {
+              margin-left: 1%;
+              margin-right: 1%;
+            }
+            &:nth-child(5n+3) {
+              margin-left: 1%;
+              margin-right: 1%;
+            }
+            &:nth-child(5n+4) {
+              margin-left: 1%;
+              margin-right: 1%;
+            }
+            &:nth-child(5n+5) {
+              margin-left: 1%;
+              margin-right: 0;
+            }
           }
           @media only screen and (max-width: 1100px) {
-            width:17%;
+            &:nth-child(4n+1) {
+              grid-column-start: 1;
+              grid-column-end: 5;
+            }
+            &:nth-child(4n+2) {
+              grid-column-start: 5;
+              grid-column-end: 8;
+            }
+            &:nth-child(4n+3) {
+              grid-column-start: 8;
+              grid-column-end: 11;
+            }
+            &:nth-child(4n+4) {
+              grid-column-start: 11;
+              grid-column-end: 14;
+            }
 
           }
-          @media only screen and (max-width: 900px) {
-            width:16%;
+          @media only screen and (max-width: 750px) {
+            figure{
+              svg{
+                min-width: 90px;
+              }
+            }
+            &:nth-child(3n+1) {
+              grid-column-start: 2;
+              grid-column-end: 6;
+            }
+            &:nth-child(3n+2) {
+              grid-column-start: 6;
+              grid-column-end: 10;
+            }
+            &:nth-child(3n+3) {
+              grid-column-start: 10;
+              grid-column-end: 14;
+            }
+
+          }
+          @media only screen and (max-width: 600px) {
+            figure{
+              svg{
+                min-width: 90px;
+              }
+            }
+            &:nth-child(3n+1) {
+              grid-column-start: 2;
+              grid-column-end: 6;
+            }
+            &:nth-child(3n+2) {
+              grid-column-start: 6;
+              grid-column-end: 10;
+            }
+            &:nth-child(3n+3) {
+              grid-column-start: 10;
+              grid-column-end: 14;
+            }
 
           }
         }
       }
-      &.large{
+      &.large {
         grid-column-start: 1;
         grid-column-end: -1;
         transition-property: all;
@@ -300,7 +357,8 @@
       }
     }
 
-    .five {  }
+    .five {
+    }
     .six {
       &:nth-child(6n+1) {
         grid-column-start: 2;
@@ -361,8 +419,8 @@
         }
       }
     }
-    &.title-row{
-      .six{
+    &.title-row {
+      .six {
         &:nth-child(6n+2) {
           grid-column-start: 2;
           grid-column-end: 4;
@@ -424,42 +482,42 @@
       }
     }
 
-    .eight{
-        &:nth-child(8n+1) {
-          grid-column-start: 2;
-          grid-column-end: 3;
-        }
-        &:nth-child(8n+2) {
-          grid-column-start: 3;
-          grid-column-end: 4;
-        }
-        &:nth-child(8n+3) {
-          grid-column-start: 4;
-          grid-column-end: 5;
-        }
-        &:nth-child(8n+4) {
-          grid-column-start: 5;
-          grid-column-end: 6;
-        }
-        &:nth-child(8n+5) {
-          grid-column-start: 6;
-          grid-column-end: 7;
-        }
-        &:nth-child(8n+6) {
-          grid-column-start: 7;
-          grid-column-end: 8;
-        }
-        &:nth-child(8n+7) {
-          grid-column-start: 8;
-          grid-column-end: 9;
-        }
-        &:nth-child(8n+8) {
-          grid-column-start: 9;
-          grid-column-end: 10;
-        }
+    .eight {
+      &:nth-child(8n+1) {
+        grid-column-start: 2;
+        grid-column-end: 3;
       }
-    &.title-row{
-      .eight{
+      &:nth-child(8n+2) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+      &:nth-child(8n+3) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      &:nth-child(8n+4) {
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+      &:nth-child(8n+5) {
+        grid-column-start: 6;
+        grid-column-end: 7;
+      }
+      &:nth-child(8n+6) {
+        grid-column-start: 7;
+        grid-column-end: 8;
+      }
+      &:nth-child(8n+7) {
+        grid-column-start: 8;
+        grid-column-end: 9;
+      }
+      &:nth-child(8n+8) {
+        grid-column-start: 9;
+        grid-column-end: 10;
+      }
+    }
+    &.title-row {
+      .eight {
         &:nth-child(8n+2) {
           grid-column-start: 2;
           grid-column-end: 3;
@@ -494,14 +552,14 @@
         }
       }
     }
-    figure{
+    figure {
       margin: 0;
     }
-    &.collapse-bottom{
+    &.collapse-bottom {
       margin-bottom: 0;
-      padding-bottom:0!important;
+      padding-bottom: 0 !important;
     }
-    &.collapse-bottom-with-pad{
+    &.collapse-bottom-with-pad {
       margin-bottom: 0;
     }
   }

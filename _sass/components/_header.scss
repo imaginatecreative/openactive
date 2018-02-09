@@ -804,6 +804,7 @@ html.no-cssgrid {
   grid-template-columns: [full-start] minmax(calc(calc(100% - 1008px) / 2), 1fr) [main-start] repeat(12, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1008px) / 2), 1fr) [full-end];
   align-items: center;
   min-height: 70px;
+  padding: 2rem 0 0.3rem 0;
   @media only screen and (max-width: 1400px) {
     grid-row-gap: 0!important;
   }
@@ -821,7 +822,7 @@ html.no-cssgrid {
       grid-column-end: 11;
       grid-row: 1;
       display: grid;
-      align-self: center;
+      align-self: end;
     }
     &.social-button-accelerator {
       grid-column-start: 13;
@@ -833,7 +834,7 @@ html.no-cssgrid {
       grid-column-start: 14;
       grid-column-end: 14;
       grid-row: 1;
-      align-self: center;
+      align-self: end;
     }
     @media only screen and (max-width: 1400px) {
       &.logo-accelerator {
@@ -868,7 +869,6 @@ html.no-cssgrid {
         width:100%;
         min-width: 200px;
         max-width: 250px;
-        padding: 1rem 0 0 1rem;
         box-sizing: border-box;
         @media only screen and (max-width: 1400px) {
           padding: 1rem 0 0 0;
