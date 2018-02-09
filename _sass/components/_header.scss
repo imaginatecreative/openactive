@@ -804,7 +804,7 @@ html.no-cssgrid {
   grid-template-columns: [full-start] minmax(calc(calc(100% - 1008px) / 2), 1fr) [main-start] repeat(12, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1008px) / 2), 1fr) [full-end];
   align-items: center;
   min-height: 70px;
-  padding: 2rem 0 0.3rem 0;
+  padding: 2rem 2rem 1rem 2rem;
   position: fixed;
   margin-bottom: 1rem;
   width: 100%;

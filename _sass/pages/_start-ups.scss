@@ -5,6 +5,10 @@
 }
 
 .start-up-components {
+  //article{
+  //  padding: 4rem 0;
+  //}
+
   #hover-blocks {
     .one {
       .five {
@@ -99,6 +103,7 @@
     }
   }
   .featured {
+    padding:0;
     .quote {
       margin-top: 0;
       svg {
@@ -210,7 +215,7 @@
     }
   }
   #mentors {
-    padding: 4rem 0;
+
     .six {
       text-align: center;
       position: relative;
@@ -269,7 +274,6 @@
       }
     }
   }
-
   #selection {
     align-items: stretch;
     .three {
@@ -282,9 +286,6 @@
       }
     }
   }
-
-
-
   .intro-text{
 
     position: relative;
