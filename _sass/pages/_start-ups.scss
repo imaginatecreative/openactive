@@ -160,31 +160,15 @@
     }
   }
   .steps {
-    .one, .three {
-      text-align: center;
+    .five{
+
     }
-    .three {
-      &:nth-child(3) {
-        align-self: center;
+    figure.five{
+      svg{
+        max-width: 60px;
+        margin: 0 auto;
+        display: block;
       }
-      @media only screen and (max-width: 900px) {
-        &:nth-child(3n+1) {
-          grid-column-start: 2;
-          grid-column-end: 14;
-        }
-        &:nth-child(3n+2) {
-          grid-column-start: 2;
-          grid-column-end: 14;
-        }
-        &:nth-child(3n+3) {
-          grid-column-start: 2;
-          grid-column-end: 14;
-        }
-      }
-    }
-    figure {
-      width: 150px;
-      display: inline-block;
     }
   }
   #mentors {
