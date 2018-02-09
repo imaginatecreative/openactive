@@ -804,7 +804,7 @@ html.no-cssgrid {
   grid-template-columns: [full-start] minmax(calc(calc(100% - 1008px) / 2), 1fr) [main-start] repeat(12, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1008px) / 2), 1fr) [full-end];
   align-items: center;
   min-height: 70px;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 0.5rem 0;
   position: fixed;
   margin-bottom: 1rem;
   width: 100%;
@@ -812,9 +812,9 @@ html.no-cssgrid {
   z-index: 200;
   transition: height 0.5s ease;
   @media only screen and (max-width: 1400px) {
-    grid-gap: 0!important;
     padding-top: 0.5rem;
   }
+
   .g-item {
     &.logo-accelerator {
       grid-column-start: 1;
@@ -822,7 +822,10 @@ html.no-cssgrid {
       grid-row: 1;
       align-self: center;
       justify-content: end;
-      display: inherit;
+      padding: 0 0 0 1rem;
+      align-items: start;
+      display: flex;
+
     }
     &.headline-accelerator {
       grid-column-start: 2;
@@ -848,6 +851,7 @@ html.no-cssgrid {
         grid-column-start: 2;
         grid-column-end: 6;
         grid-row: 1/ span 1;
+        padding: 0;
       }
       &.headline-accelerator {
         //grid-column-start: 2;
@@ -873,12 +877,58 @@ html.no-cssgrid {
 
       }
     }
+    @media only screen and (max-width: 900px) {
+      padding: 0.5rem 0 0 0;
+      &.logo-accelerator {
+        grid-column-start: 2;
+        grid-column-end: 6;
+      }
+      &.social-button-accelerator {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        justify-content: end;
+        display: inherit;
+      }
+      &.button-accelerator {
+        grid-column-start: 11;
+        grid-column-end: 15;
+
+      }
+    }
+    @media only screen and (max-width: 750px) {
+      &.logo-accelerator {
+        grid-column-start: 2;
+        grid-column-end: 6;
+      }
+      &.social-button-accelerator {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        justify-content: end;
+        display: inherit;
+      }
+      &.button-accelerator {
+        grid-column-start: 10;
+        grid-column-end: 14;
+
+      }
+    }
+    @media only screen and (max-width: 750px) {
+      &.logo-accelerator {
+ 
+      }
+      &.social-button-accelerator {
+        display: none;
+      }
+      &.button-accelerator {
+      }
+    }
   }
+
   #logo-accelerator {
     margin: 0;
     a {
       svg {
-        width:100%;
+        width: 100%;
         min-width: 200px;
         max-width: 250px;
         box-sizing: border-box;
@@ -919,11 +969,12 @@ html.no-cssgrid {
     }
   }
 }
-#sticky-phantom-accelerator{
-  height:70px;
-  @media only screen and (max-width: 1400px) {
 
+#sticky-phantom-accelerator {
+  height: 110px;
+  @media only screen and (max-width: 1400px) {
+    height: 86px;
   }
-  }
+}
 
 

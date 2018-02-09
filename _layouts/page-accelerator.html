@@ -134,7 +134,7 @@ layout: default-accelerator
             <figure>
                 {% include years.svg %}
                 <div class="wrap">
-                <div class="odometer years">0</div>
+                    <div class="odometer years">0</div>
                 </div>
                 <figcaption>Years</figcaption>
             </figure>
@@ -143,7 +143,7 @@ layout: default-accelerator
             <figure>
                 {% include startup.svg %}
                 <div class="wrap">
-                <div class="odometer startups">0</div>
+                    <div class="odometer startups">0</div>
                 </div>
                 <figcaption>startups</figcaption>
             </figure>
@@ -152,7 +152,7 @@ layout: default-accelerator
             <figure>
                 {% include world.svg %}
                 <div class="wrap">
-                <div class="odometer world">0</div>
+                    <div class="odometer world">0</div>
                 </div>
                 <figcaption>countries worldwide</figcaption>
             </figure>
@@ -161,7 +161,7 @@ layout: default-accelerator
             <figure>
                 {% include cohorts.svg %}
                 <div class="wrap">
-                <div class="odometer cohorts">0</div>
+                    <div class="odometer cohorts">0</div>
                 </div>
                 <figcaption>cohorts</figcaption>
             </figure>
@@ -170,9 +170,9 @@ layout: default-accelerator
             <figure>
                 {% include investment.svg %}
                 <div class="wrap">
-                <span>£</span>
-                <div class="odometer investment">0</div>
-                <span>m</span>
+                    <span>£</span>
+                    <div class="odometer investment">0</div>
+                    <span>m</span>
                 </div>
                 <figcaption>investment raised</figcaption>
             </figure>
@@ -181,7 +181,7 @@ layout: default-accelerator
             <figure>
                 {% include jobs.svg %}
                 <div class="wrap">
-                <div class="odometer jobs">0</div>
+                    <div class="odometer jobs">0</div>
                 </div>
                 <figcaption>jobs</figcaption>
             </figure>
@@ -200,8 +200,8 @@ layout: default-accelerator
             <figure>
                 <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
                 <figcaption>
-                <p><strong>{{ post.title | escape }}</strong></p>
-                <p>{{ post.role | escape }} </p>
+                    <p><strong>{{ post.title | escape }}</strong></p>
+                    <p>{{ post.role | escape }} </p>
                 </figcaption>
                 <div class="social-links">
                     {% if post.twitter %}
@@ -243,28 +243,28 @@ layout: default-accelerator
                 {% include one.svg %}
             </figure>
             <figcaption>Written application via F6S</figcaption>
-           
+
         </div>
         <div class="three">
             <figure>
                 {% include two.svg %}
-           </figure>
-           <figcaption>f2f 4-day bootcamp and pitch in London for shortlisted startups</figcaption>
-            
+            </figure>
+            <figcaption>f2f 4-day bootcamp and pitch in London for shortlisted startups</figcaption>
+
         </div>
         <div class="three">
             <figure>
                 {% include three.svg %}
             </figure>
             <figcaption>Up to 10 selected startups invited to join the programme by an expert panel</figcaption>
-           
+
         </div>
     </article>
 
     <article class="title-row invert-5">
         <h2 class="sub-heading-two">Timeline</h2>
         <div class="one">
-           {% include Timeline3.svg %} 
+            {% include Timeline3.svg %}
         </div>
     </article>
     <article class="title-row">
@@ -309,7 +309,6 @@ layout: default-accelerator
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
                 {% for post in aboutAccelerator limit:3 %}
                 {% if post.is_featured %}
-
                 <div class=" show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
@@ -324,13 +323,14 @@ layout: default-accelerator
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
                 {% for post in aboutAccelerator limit:2 offset:3 %}
-
+                {% if post.is_featured %}
                 <div class="show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
                         {{post.content}}
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

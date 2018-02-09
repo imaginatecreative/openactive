@@ -1,6 +1,7 @@
 ---
 title: I want to publish open data for the accelerator. Where do I start?
 date: 2018-02-07 12:04:00 Z
+is_featured: true
 categories:
 - OpenActive Accelerator
 ---

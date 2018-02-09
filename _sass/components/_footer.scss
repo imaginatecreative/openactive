@@ -1,4 +1,4 @@
-footer {
+footer:not(.slim) {
   article {
     grid-row-gap: 0;
     &:nth-child(1){
@@ -192,4 +192,8 @@ footer {
       }
     }
   }
+}
+
+.slim{
+  border-top: 1px solid $gray;
 }
