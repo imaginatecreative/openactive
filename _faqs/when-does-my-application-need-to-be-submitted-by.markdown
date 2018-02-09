@@ -1,9 +1,9 @@
 ---
-title: When does my application need to be submitted by?
+title: What's the closing date for applications?
 date: 2018-02-07 12:03:00 Z
 categories:
 - OpenActive Accelerator
 is_featured: true
 ---
 
-Deadline for applications close on \[Date\] Link to the timeline/ how to apply.
+11pm, 11 March 2018
