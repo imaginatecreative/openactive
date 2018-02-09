@@ -160,14 +160,41 @@
     }
   }
   .steps {
-    .five{
+    .one {
+      display: inline-block;
+      .five-steps {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 2rem;
+        width: 18%;
+        &:nth-child(5n+1) {
+          margin-left: 0;
+          margin-right: 1%;
+        }
+        &:nth-child(5n+2) {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+        &:nth-child(5n+3) {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+        &:nth-child(5n+4) {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+        &:nth-child(5n+5) {
+          margin-left: 1%;
+          margin-right: 0;
+        }
 
-    }
-    figure.five{
-      svg{
-        max-width: 60px;
-        margin: 0 auto;
-        display: block;
+      }
+      figure.five-steps {
+        svg {
+          max-width: 60px;
+          margin: 0 auto;
+          display: block;
+        }
       }
     }
   }
@@ -231,7 +258,7 @@
           }
           @media only screen and (max-width: 900px) {
 
-            font-size: $header-size / 3!important;
+            font-size: $header-size / 3 !important;
 
           }
         }
