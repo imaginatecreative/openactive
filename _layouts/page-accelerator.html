@@ -113,78 +113,85 @@ layout: default-accelerator
         </div>
     </article>
 
-    <article class="title-row featured invert-2">
-        <i class="quote">
-            {% include quote.svg %}
-        </i>
-        <blockquote>
-            <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build
-                a product that consistently "wows" the householders that use our platform and helps them live more
-                happily together.</p>
-            <h6>Nick Katz</h6>
-            <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
-        </blockquote>
-        <div></div>
-    </article>
+    <!--<article class="title-row featured invert-2">-->
+        <!--<i class="quote">-->
+            <!--{% include quote.svg %}-->
+        <!--</i>-->
+        <!--<blockquote>-->
+            <!--<p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build-->
+                <!--a product that consistently "wows" the householders that use our platform and helps them live more-->
+                <!--happily together.</p>-->
+            <!--<h6>Nick Katz</h6>-->
+            <!--<h6>Co-founder & CEO, acasa (formerly Splittable)</h6>-->
+        <!--</blockquote>-->
+        <!--<div></div>-->
+    <!--</article>-->
 
-
-    <article class="title-row stats">
+    <article class="invert stats title-row">
         <h2 class="sub-heading-two">Our experience supporting startups</h2>
-        <div class="six">
-            <figure>
-                {% include years.svg %}
-                <div class="wrap">
-                    <div class="odometer years">0</div>
+
+        <div class="two stats">
+            <div class="subgrid">
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <div class="odometer years">0</div>
+                        </div>
+                        <figcaption>Years</figcaption>
+                    </figure>
                 </div>
-                <figcaption>Years</figcaption>
-            </figure>
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <div class="odometer startups">0</div>
+                        </div>
+                        <figcaption>startups</figcaption>
+                    </figure>
+                </div>
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <div class="odometer world">0</div>
+                        </div>
+                        <figcaption>countries worldwide</figcaption>
+                    </figure>
+                </div>
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <div class="odometer cohorts">0</div>
+                        </div>
+                        <figcaption>cohorts</figcaption>
+                    </figure>
+                </div>
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <div class="odometer jobs">0</div>
+                        </div>
+                        <figcaption>jobs</figcaption>
+                    </figure>
+                </div>
+                <div class="three">
+                    <figure>
+                        <div class="wrap">
+                            <span class="sterling">£</span>
+                            <div class="odometer investment">0</div>
+                            <span class="million">m</span>
+                        </div>
+                        <figcaption>investment raised</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-        <div class="six">
-            <figure>
-                {% include startup.svg %}
-                <div class="wrap">
-                    <div class="odometer startups">0</div>
-                </div>
-                <figcaption>startups</figcaption>
-            </figure>
-        </div>
-        <div class="six">
-            <figure>
-                {% include world.svg %}
-                <div class="wrap">
-                    <div class="odometer world">0</div>
-                </div>
-                <figcaption>countries worldwide</figcaption>
-            </figure>
-        </div>
-        <div class="six">
-            <figure>
-                {% include cohorts.svg %}
-                <div class="wrap">
-                    <div class="odometer cohorts">0</div>
-                </div>
-                <figcaption>cohorts</figcaption>
-            </figure>
-        </div>
-        <div class="six">
-            <figure>
-                {% include investment.svg %}
-                <div class="wrap">
-                    <span>£</span>
-                    <div class="odometer investment">0</div>
-                    <span>m</span>
-                </div>
-                <figcaption>investment raised</figcaption>
-            </figure>
-        </div>
-        <div class="six">
-            <figure>
-                {% include jobs.svg %}
-                <div class="wrap">
-                    <div class="odometer jobs">0</div>
-                </div>
-                <figcaption>jobs</figcaption>
-            </figure>
+        <div class="two">
+            <blockquote class="featured">
+                <p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build
+                    a product that consistently "wows" the householders that use our platform and helps them live more
+                    happily together.</p>
+                <h6>Nick Katz</h6>
+                <h6>Co-founder & CEO, acasa (formerly Splittable)</h6>
+            </blockquote>
         </div>
     </article>
 
@@ -201,6 +208,7 @@ layout: default-accelerator
                 <img src="{{ theImage  | relative_url}}" alt="{{ post.title | escape }} Icon"/>
                 <figcaption>
                     <p><strong>{{ post.title | escape }}</strong></p>
+                    <p>{{ post.second-name | escape }} </p>
                     <p>{{ post.role | escape }} </p>
                 </figcaption>
                 <div class="social-links">
@@ -238,26 +246,34 @@ layout: default-accelerator
 
     <article class="title-row steps collapse-bottom-with-pad invert-2" id="selection">
         <h2 class="sub-heading-two">How we select startups</h2>
-        <div class="three">
-            <figure>
-                {% include one.svg %}
-            </figure>
-            <figcaption>Written application via F6S</figcaption>
+        <div class="one non-grid">
+            <div class="five">
+                <!--<figure>-->
+                <!--{% include one.svg %}-->
+                <!--</figure>-->
+                <figcaption>Written application via F6S</figcaption>
 
-        </div>
-        <div class="three">
-            <figure>
-                {% include two.svg %}
+            </div>
+            <figure class="five">
+                {% include arrow.svg %}
             </figure>
-            <figcaption>f2f 4-day bootcamp and pitch in London for shortlisted startups</figcaption>
+            <div class="five">
+                <!--<figure>-->
+                <!--{% include two.svg %}-->
+                <!--</figure>-->
+                <figcaption>f2f 4-day bootcamp and pitch in London for shortlisted startups</figcaption>
 
-        </div>
-        <div class="three">
-            <figure>
-                {% include three.svg %}
+            </div>
+            <figure class="five">
+                {% include arrow.svg %}
             </figure>
-            <figcaption>Up to 10 selected startups invited to join the programme by an expert panel</figcaption>
+            <div class="five">
+                <!--<figure>-->
+                <!--{% include three.svg %}-->
+                <!--</figure>-->
+                <figcaption>Up to 10 selected startups invited to join the programme by an expert panel</figcaption>
 
+            </div>
         </div>
     </article>
 
