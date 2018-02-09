@@ -1,6 +1,7 @@
 ---
-title: Joe Scarboro
+title: Joe
 date: 2018-02-06 17:53:00 Z
+second-name: Scarboro
 role: Touchpape
 thumbnail_image: "/uploads/joscarabo.jpg"
 twitter: https://twitter.com/JoeScarboro

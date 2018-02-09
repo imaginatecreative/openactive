@@ -88,7 +88,7 @@
     }
   }
   .featured {
-    padding:0;
+    padding: 0;
     .quote {
       margin-top: 0;
       svg {
@@ -97,75 +97,46 @@
     }
   }
   .stats {
-    padding: 1rem 0;
-    .six {
-      figure {
-        position: relative;
-        .wrap {
-          color: $brand-blue;
-          font-family: $heading-font-family;
-          font-size: $header-size;
-          font-weight: 800;
-          //position: absolute;
-          //top: 0;
-          //left: 0;
-          //width: 100%;
-          //height: 100%;
-          //display: inline-flex;
-          //justify-content: center;
-          //align-items: center;
-          //box-sizing: border-box;
-          span{
-            font-family: $heading-font-family;
-          }
-          padding-bottom: 25px;
-          @media only screen and (max-width: 1200px) {
-            font-size: $header-size / 1.5;
+    .two {
+      &.stats {
+        .three {
+          figure {
+            position: relative;
+            .wrap {
+              color: $brand-blue;
+              font-family: $heading-font-family;
+              font-size: $header-size;
+              font-weight: 800;
+              span {
+                font-family: $heading-font-family;
+                font-size: $header-size /1.2;
+              }
+
+              .sterling {
+                margin-right: -8px;
+              }
+              .million {
+                margin-left: -5px;
+              }
+            }
+            figcaption {
+              font-family: $heading-font-family;
+              color: $white;
+              font-size: 1rem;
+            }
           }
           @media only screen and (max-width: 1000px) {
-            font-size: $header-size / 1.2;
+            &:nth-child(2n+1) {
+              grid-column: col / span 6;
+            }
+            &:nth-child(2n+2) {
+              grid-column: col 7 / span 6;
+            }
           }
-          @media only screen and (max-width: 750px) {
-            font-size: $header-size / 1;
-
-          }
-        }
-        figcaption{
-          font-family: $heading-font-family;
-          color: $brand-blue;
-          font-size: 1rem;
-        }
-        text-align: center;
-        svg {
-          display: none;
-          .years-1, .startup-1, .world-1, .cohorts-1, .investment-1, .jobs-1 {
-            fill: $brand-five;
-          }
-          .years-1 {
-          }
-          .startup-1 {
-          }
-          .world-1 {
-          }
-          .cohorts-1 {
-          }
-          .investment-1 {
-          }
-          .jobs-1 {
-          }
-        }
-      }
-      @media only screen and (max-width: 600px) {
-        &:nth-child(2n+2) {
-          grid-column-start: 2;
-          grid-column-end: 8;
-        }
-        &:nth-child(2n+3) {
-          grid-column-start: 8;
-          grid-column-end: 14;
         }
       }
     }
+
   }
   .faq-title {
     padding: 4rem 0 0 0;
@@ -195,7 +166,6 @@
     .three {
       &:nth-child(3) {
         align-self: center;
-
       }
       @media only screen and (max-width: 900px) {
         &:nth-child(3n+1) {
@@ -212,19 +182,21 @@
         }
       }
     }
-    figure{
+    figure {
       width: 150px;
-
       display: inline-block;
     }
   }
   #mentors {
-
     .six {
       text-align: center;
       position: relative;
       img {
         border-radius: 50%;
+        display: inline-block;
+        @media only screen and (max-width: 900px) {
+          max-width: 150px;
+        }
       }
       .social-links {
         width: 100%;
@@ -255,14 +227,28 @@
             margin-top: 0;
             font-size: $header-size / 4;
             text-transform: uppercase;
-            margin-bottom: .5rem;
             letter-spacing: 0;
             font-weight: 800;
-            line-height: $header-line-height / 1.2;
+            line-height: 1;
           }
           &:nth-child(2) {
             margin-top: 0;
+            font-size: $header-size / 4;
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+            letter-spacing: 0;
+            font-weight: 800;
+            line-height: 1;
+          }
+          &:nth-child(3) {
+            margin-top: 0;
             font-size: $header-size /4;
+            min-height: 30px;
+          }
+          @media only screen and (max-width: 900px) {
+
+            font-size: $header-size / 3!important;
+
           }
         }
       }
@@ -281,16 +267,16 @@
   #selection {
     align-items: stretch;
     .three {
-      background-color:$globalTwo;
-      border-radius:10px;
-      padding:1rem;
+      background-color: $globalTwo;
+      border-radius: 10px;
+      padding: 1rem;
 
       figcaption {
-        font-weight:700;
+        font-weight: 700;
       }
     }
   }
-  .intro-text{
+  .intro-text {
 
     position: relative;
     .line-graphic {
