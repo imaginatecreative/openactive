@@ -168,7 +168,7 @@ $globalEight: $brand-eight;
   }
   a.button-primary--ghostlarge{
     background-color: transparent;
-    border-color: $globalFive;
+    //border-color: $globalFive;
     color: $white;
   }
 
@@ -236,6 +236,16 @@ $globalEight: $brand-eight;
       }
     }
     a.button-primary--ghost{
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      &:hover{
+        border-color:transparent;
+        background-color: $brand-two;
+      }
+
+    }
+    a.button-primary--ghostlarge{
       background-color: transparent;
       border-color: white;
       color: white;

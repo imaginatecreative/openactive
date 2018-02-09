@@ -17,8 +17,15 @@ layout: default-accelerator
     </article>
 
     <article class="intro-text invert">
+
         <div class="one">
-            <p class="h3-copy">Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
+
+            <h3>We want to get people active using data.</h3>
+            <p>That’s why we’ve been working closely with activity providers to open up their opportunity data for
+                our OpenActive Accelerator. Now it’s over to you. If you’ve got an innovative idea that uses open
+                opportunity data to help people find and take part in physical activities, we want to hear from
+                you.</p>
+            <p>Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
                 on many aspects of people’s
                 lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
             <p>In the sport and physical activity sector, services designed to get people <strong>more active</strong>
@@ -30,8 +37,11 @@ layout: default-accelerator
                 different stakeholders in the ecosystem, such as gyms and sport clubs.</p>
         </div>
         <div class="one">
-            <a class="button-primary--ghostlarge" target="_blank" href="https://www.f6s.com/openactiveaccelerator/apply">APPLY NOW</a>
+            <a class="button-primary--ghostlarge" target="_blank"
+               onclick="gtag('event', 'accelerator ctas', {'hero': 'clicked', 'event_label': 'apply now'});"
+               href="https://www.f6s.com/openactiveaccelerator/apply">APPLY NOW</a>
         </div>
+
         <i class="line-graphic">{% include line-graphic-corner.svg %}</i>
     </article>
 
@@ -113,17 +123,17 @@ layout: default-accelerator
     </article>
 
     <!--<article class="title-row featured invert-2">-->
-        <!--<i class="quote">-->
-            <!--{% include quote.svg %}-->
-        <!--</i>-->
-        <!--<blockquote>-->
-            <!--<p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build-->
-                <!--a product that consistently "wows" the householders that use our platform and helps them live more-->
-                <!--happily together.</p>-->
-            <!--<h6>Nick Katz</h6>-->
-            <!--<h6>Co-founder & CEO, acasa (formerly Splittable)</h6>-->
-        <!--</blockquote>-->
-        <!--<div></div>-->
+    <!--<i class="quote">-->
+    <!--{% include quote.svg %}-->
+    <!--</i>-->
+    <!--<blockquote>-->
+    <!--<p>The Open Data Institute sits at the heart of the open data movement globally…[it] enabled us to build-->
+    <!--a product that consistently "wows" the householders that use our platform and helps them live more-->
+    <!--happily together.</p>-->
+    <!--<h6>Nick Katz</h6>-->
+    <!--<h6>Co-founder & CEO, acasa (formerly Splittable)</h6>-->
+    <!--</blockquote>-->
+    <!--<div></div>-->
     <!--</article>-->
 
     <article class="invert stats title-row">
@@ -254,7 +264,6 @@ layout: default-accelerator
                 <!--{% include one.svg %}-->
                 <!--</figure>-->
                 <figcaption>Written application via F6S</figcaption>
-
             </div>
             <figure class="five-steps">
                 {% include arrow.svg %}
@@ -291,17 +300,23 @@ layout: default-accelerator
         <div class="subgrid">
             <div class="three blue-gradient-bc">
                 <h4>Apply as a startup</h4>
-                <a class="button-primary" target="_blank" rel="noopener" href="https://www.f6s.com/openactiveaccelerator/apply">Start</a>
+                <a class="button-primary" target="_blank" rel="noopener"
+                   onclick="gtag('event', 'accelerator ctas', {'Low CTA': 'clicked', 'event_label': 'start'});"
+                   href="https://www.f6s.com/openactiveaccelerator/apply">Start</a>
             </div>
             <div class="three blue-gradient-bc">
                 <h4>Become a mentor </h4>
                 <a class="button-primary"
+                   onclick="gtag('event', 'accelerator ctas', {'Low CTA': 'clicked', 'event_label': 'sign up'});"
                    href="https://docs.google.com/forms/d/1rv50zCN17njsYrAG2YBlHqqSpVeHCJmp0NpN87AGBiQ/edit"
                    target="_blank">Sign Up</a>
             </div>
             <div class="three blue-gradient-bc">
                 <h4>Join as a partner</h4>
-                <a class="button-primary" href="{{ site.baseurl }}{% link join-partner.md %}">Join Now</a>
+                <a class="button-primary"
+                   href="{{ site.baseurl }}{% link join-partner.md %}"
+                   onclick="gtag('event', 'accelerator ctas', {'Low CTA': 'clicked', 'event_label': 'join now'});"
+                >Join Now</a>
             </div>
         </div>
     </article>
