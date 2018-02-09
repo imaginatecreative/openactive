@@ -66,7 +66,9 @@ h1 + p, h1 + ul li p, .h1-copy {
 .hero-sub{
   font-size: $header-size/  1.7;
 }
-
+h1 + h2{
+  margin-bottom: 1rem;
+}
 // Heading Two Styles
 //
 // Hero Text
@@ -78,10 +80,13 @@ h1 + p, h1 + ul li p, .h1-copy {
 //
 // Styleguide typography.heading-two
 h2 {
-  font-size: $header-size / 1.5;
+  font-size: $header-size / 1.4;
   font-weight: 800;
 }
-
+h2 + p, h2 + ul li p, .h2-copy {
+  font-size: $header-size/  2.1;
+  font-family: $font-family;
+}
 // Sub Heading Two Styles
 //
 // Heading text for sections, appears in left columns at larger screens
