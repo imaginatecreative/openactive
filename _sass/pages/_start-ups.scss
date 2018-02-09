@@ -16,38 +16,45 @@
         figure {
           position: relative;
           margin: 20px;
-          // svg {
-          //   margin-top: 0;
-          //   transform: scale(1.1);
-          //   .opendata-1, .officespace-1, .mentorship-1, .mentorship-2, .workshop-1, .oneonone-1, .perks-1, .networking-1, .partners-1, .investors-1, .demo-1 {
-          //     fill: $brand-five;
-          //     stroke: $brand-five;
-          //   }
-          //   .opendata-1 {
-          //   }
-          //   .officespace-1 {
-          //   }
-          //   .mentorship-1 {
-          //   }
-          //   .mentorship-2 {
-          //   }
-          //   .workshop-1 {
-          //   }
-          //   .oneonone-1 {
-          //   }
-          //   .perks-1 {
-          //   }
-          //   .networking-1 {
-          //   }
-          //   .partners-1 {
-          //   }
-          //   .investors-1 {
-          //   }
-          //   .demo-1 {
-          //   }
-          // }
+           svg {
+             margin-top: 0;
+             .opendata-1, .officespace-1, .mentorship-1, .mentorship-2, .workshop-1, .oneonone-1, .perks-1, .networking-1, .partners-1, .investors-1, .demo-1 {
+               //fill: $brand-five;
+               //stroke: $brand-five;
+             }
+             .opendata-3 {
+               fill:$global;
+             }
+             .officespace-3 {
+               fill:$global;
+             }
+             .mentorship-3 {
+               fill:$global;
+
+             }
+             .workshops-3 {
+               fill:$global;
+             }
+             .oneonone-3 {
+               fill:$global;
+             }
+             .perks-3 {
+               fill:$global;
+             }
+             .networking-3 {
+               fill:$global;
+             }
+             .partners-3 {
+               fill:$global;
+             }
+             .investors-3 {
+               fill:$global;
+             }
+             .demo-3 {
+               fill:$global;
+             }
+           }
           figcaption {
-            transform: scale(1.2);
             position: absolute;
             top: 0;
             padding: 1rem;
@@ -168,11 +175,13 @@
       padding-left: 3px;
     }
     .one {
-      display: inline-block;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
       .five-steps {
         display: inline-block;
         vertical-align: top;
-        margin-bottom: 2rem;
         width: 18%;
         &:nth-child(5n+1) {
           margin-left: 0;
