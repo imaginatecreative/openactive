@@ -72,7 +72,7 @@ aria-labelledby="booking-systems">
 <li>Now, your customers’ activities will be available everywhere, from high-traffic online platforms,, to local community services. </li>
 </ol>
 <p>Publish your activity listing and join the open data revolution.</p>
-<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Start Now</a>
+<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Get Started</a>
 
 </div>
 
@@ -98,7 +98,7 @@ aria-labelledby="activity-provider">
 </li>
 </ol>
 <p>Publish your activity listing and join the open data revolution</p>
-<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Start Now</a>
+<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Get Started</a>
 </div>
 
 
@@ -117,7 +117,7 @@ aria-labelledby="activity-provider">
 <li>Join their mailing list and review the documentation.</li>
 <li>Pull in the data to your website or app. If you need help reach out to the OpenActive Community.</li>
 </ol>
-<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Getting Started</a>
+<a class="button-primary" href="{{ site.baseurl }}{% link getting-started.md %}">Get Started</a>
 
 </div>
 
@@ -189,7 +189,7 @@ Open data is data that anyone can access, use or share. Simple as that. When big
 
 
 
-<article class="call_to_action--full-width startup">
+<article class="call_to_action--full-width global">
 <h2 class="sub-heading-two">Start Ups</h2>
 <div class="one">
 
@@ -204,7 +204,7 @@ Millions find it hard to stay active. OpenActive Accelerator calls for startups 
 <figure>
 <div class="triangle"></div>
 <div class="stripe"></div>
-<div style="background: url({{ site.baseurl }}/assets/images/sideplank.jpg)center center / cover no-repeat;"></div>
+<div style="background: url({{ site.baseurl }}/uploads/accel_cta.png)center center / cover no-repeat;"></div>
 </figure>
 
 </article>
@@ -214,7 +214,7 @@ Millions find it hard to stay active. OpenActive Accelerator calls for startups 
 <article class="post-list title-row">
 <h2 class="sub-heading-two"> Latest News</h2>
 {% for post in site.posts limit:2 %}
-{% if post.is_featured %}
+
 <div class="two" id="post-{{ forloop.index }}">
 <figure role="group">
 <img src="{{post.thumbnail_image | relative_url}}" alt="{{ post.title | escape }}-post-thumbnail">
@@ -237,7 +237,7 @@ Millions find it hard to stay active. OpenActive Accelerator calls for startups 
 </div>
 </div>
 </div>
-{% endif %}
+
 {% endfor %}
 </article>
 

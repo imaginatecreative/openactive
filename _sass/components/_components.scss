@@ -977,6 +977,39 @@ nav {
   }
 }
 
+
+//POST NEXT/PREV
+
+#post-nav {
+  .subgrid {
+    height:100%;
+    margin-bottom:0;
+  }
+  .two {
+    grid-row: 1;
+    .two {
+      grid-column-gap: 0;
+
+      .left {
+        grid-column: col 1/ 4;
+        padding: 0;
+
+      }
+
+      .right {
+        grid-column: col 4/ -1;
+        padding: 1rem;
+
+        // border-left: solid 1rem $pre;
+      }
+
+      
+    }
+  }
+
+
+}
+
 // MEMBERS PAGE STYLES
 .member-list {
 

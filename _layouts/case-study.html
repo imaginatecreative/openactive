@@ -26,7 +26,7 @@ layout: default
 
   <div itemprop="articleBody">
     
-    {{ content | replace: '/uploads/', '/openactive/uploads/' }}
+    {{ content | replace: '/uploads/', '/openactive-staging/uploads/' }}
 
   </div>
 </article>
@@ -51,9 +51,10 @@ layout: default
                 escape
                 }}</h5>
             <p>{{ theMember.content | escape }}</p>
-          <a class="button-primary--ghost" href="{{ theMember.website }}" target="_blank">Visit Website</a>
+          <p><a class="link" href="{{ theMember.website }}" target="_blank">Visit Website</a></p>
         </div>
       </div>
     </div>
   </div>
 </article>
+{% include read-more.html %}
