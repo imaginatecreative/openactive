@@ -63,8 +63,8 @@ defaults:
     is_featured: false
     thumbnail_image: "/uploads/placeholder.png"
     twitter: 
-    linkedin:
-    role:
+    linkedin: 
+    role: 
 - scope:
     path: ''
     type: partners
@@ -94,9 +94,8 @@ compress_html:
   blanklines: false
   profile: false
 locale: en-US
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+description: Helping physical activity reach everyone. OpenActive is community-led
+  initiative with an ambition to help people in England get active using open data.
 baseurl: "/openactive-staging"
 url: https://imaginatecreative.github.io
 repository: imaginatecreative/openactive-staging

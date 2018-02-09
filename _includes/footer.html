@@ -17,7 +17,7 @@
                     <div class="six-members" id="member-{{ forloop.index }}">
                         <figure role="group">
                             <a href="{{ post.url | relative_url }}">
-                                <img src="{{post.thumbnail_image | relative_url}}" alt="{{ post.title | escape }}">
+                                <img role="logo" src="{{post.thumbnail_image | relative_url}}" alt="{{ post.title | escape }}">
                                 <span class="hidden" aria-hidden="true">{{ post.title | escape }}</span>
                             </a>
                         </figure>

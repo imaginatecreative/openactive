@@ -44,6 +44,10 @@ body {
   img {
     margin: 0 auto;
   }
+
+  img[role=logo] {
+    border: solid 1px #efefef;
+  }
 }
 
 //figure{
