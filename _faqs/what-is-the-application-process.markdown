@@ -1,6 +1,8 @@
 ---
 title: What is the application process?
 date: 2018-02-10 16:39:00 Z
+categories:
+- OpenActive Accelerator
 ---
 
 * Initial application via [F6S](https://www.f6s.com/openactiveaccelerator/apply)
