@@ -6,4 +6,4 @@ categories:
 is_featured: true
 ---
 
-You can find our eligibility criteria on the accelerator web page.
+Take a read of what we look for [what we look for](https://docs.google.com/document/d/1o06BCIxYRc1-7vQy4z6N7RL7ebw5kj8QaAkLb4v-8og/edit).
