@@ -333,30 +333,30 @@ layout: default-accelerator
         <div class="two">
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
-                {% for post in aboutAccelerator limit:3 %}
-                {% if post.is_featured %}
+                {% for post in aboutAccelerator limit:4 %}
+             
                 <div class=" show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
                         {{post.content}}
                     </div>
                 </div>
-                {% endif %}
+               
                 {% endfor %}
             </div>
         </div>
         <div class="two">
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
-                {% for post in aboutAccelerator limit:2 offset:3 %}
-                {% if post.is_featured %}
+                {% for post in aboutAccelerator limit:4 offset:4 %}
+              
                 <div class="show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
                         {{post.content}}
                     </div>
                 </div>
-                {% endif %}
+           
                 {% endfor %}
             </div>
         </div>
