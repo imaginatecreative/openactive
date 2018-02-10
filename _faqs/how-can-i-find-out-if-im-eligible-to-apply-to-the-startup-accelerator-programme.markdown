@@ -1,5 +1,5 @@
 ---
-title: How do I know if the OpenActive Accelerator is right for my startup?
+title: How can I find out if the accelerator programme is right for me?
 date: 2018-02-07 12:01:00 Z
 categories:
 - OpenActive Accelerator
