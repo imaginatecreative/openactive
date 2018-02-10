@@ -1,9 +1,9 @@
 ---
-title: What is OpenActive?
+title: What is this accelerator about?
 date: 2017-07-06 06:18:00 Z
 permalink: blog/faq-three.html
 categories:
-- About OpenActive
+- OpenActive Accelerator
 author: George
 layout: faq
 ---
