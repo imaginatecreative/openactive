@@ -34,7 +34,10 @@ layout: home
 </div>
 <figure role="group" aria-labelledby="open-active-video">
 
+[comment]: <> (This is a comment, it will not be included)
 <iframe width="560" height="315"  src="https://www.youtube.com/embed/kfVCRaMJarE" allowfullscreen></iframe>
+[comment]: <> (This is a comment, it will not be included)
+
 
 <figcaption id="open-active-video" class="hidden" >{{ post.title | escape }}</figcaption>
 </figure>
