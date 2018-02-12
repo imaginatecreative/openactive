@@ -20,7 +20,6 @@ $(document).ready(function () {
                 return elementBottom > viewportTop && elementTop < viewportBottom;
             };
             $(window).on('resize scroll', function () {
-                console.log('in view');
                 if ($('.stats').isInViewport()) {
                     var el = document.querySelector('.years');
                     od = new Odometer({
