@@ -25,6 +25,10 @@ layout: home
 <li class="hero-content" id="h3"><p>Innovate to help people get active</p></li>
 </ul>
 
+[How it Works](how-it-words.md)
+
+[How it Works](how-it-words.md){: .button-primary}
+
 [How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
 
 </div>
