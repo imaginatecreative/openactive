@@ -27,7 +27,7 @@ layout: home
 </ul>
 
 <!-- THIS IS THE FIRST CALL TO ACTION -->
-[How it Works\]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
+[How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
 
 </div>
 <figure role="group" aria-labelledby="open-active-video">
