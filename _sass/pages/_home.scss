@@ -1,4 +1,7 @@
-html.cssgrid, html {
+// START OF GRID LAYOUT
+/*********************************/
+/*********************************/
+html.cssgrid {
   .home {
 
     .hero--home {
@@ -97,42 +100,10 @@ html.cssgrid, html {
             grid-row: 1 / span 1;
           }
           .tablink {
-            display: inline-block;
-            list-style: none;
-            margin: 0;
             grid-row: 1;
-            text-align: center;
-            cursor: pointer;
-            transform: skew(-30deg);
-            background-color: $brand-three;
-            padding: 1rem 2rem;
-            font-size: $base-font-size;
 
             .icon_wrap_accordian {
-              position: absolute;
-              right: 0;
-              top: 0;
-              width: 5%;
-              height: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding-right: 10px;
-              .icon {
-                color: $brand-one;
-                right: 20px;
-                width: 10px;
-                height: 10px;
-                background-image: url("../assets/images/right_arrow_white.svg");
-                background-size: cover;
-                background-position: center;
-                transition: transform 0.5s;
-                cursor: pointer;
-                align-self: center;
-              }
-              @media only screen and (min-width: 1000px) {
-                display: none;
-              }
+
             }
             &:nth-child(1) {
               grid-column: col / span 3;
@@ -146,74 +117,19 @@ html.cssgrid, html {
             &:nth-child(7) {
               grid-column: col 10/ span 3;
             }
-            &:hover {
-              background-color: $brand-two;
-            }
-            &.current {
-              background: $brand-four;
-              .icon {
-                transform: rotate(90deg);
-                transition: transform 0.5s;
-              }
-            }
-            a {
-              font-weight: bold;
-              color: $white;
-              transform: skew(30deg);
-              display: inline-block;
-              z-index: 17;
-              position: relative;
-              @media only screen and (max-width: 900px) {
-                padding: 1rem 0.5rem;
-                font-size: $base-font-size / 1.2
-              }
-              @media only screen and (max-width: 1000px) {
-                padding: 0;
-              }
-            }
-            @media only screen and (max-width: 1000px) {
-              display: none;
-            }
+
           }
           .tabPanel {
             grid-column: col / span 12;
             grid-row: 2;
-            text-align: left;
-            margin-bottom: 1rem;
-            h4 {
-              font-size: 2.7rem;
-              font-weight: 600;
-              color: $brand-four;
-            }
-            p {
-              text-align: left;
-              margin-top: 20px;
-            }
-            .button-primary {
-              margin-top: 1rem;
-            }
-            ol {
-              margin-bottom: 0;
-            }
+
           }
           .tabPanel {
-            //display: none;
-            opacity: 0;
-            pointer-events: none;
-            transition-property: opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease-in-out;
             @media only screen and (max-width: 1000px) {
-              opacity: 1;
-              pointer-events: initial;
+
             }
             &.current {
-              //display: block;
-              opacity: 1;
-              pointer-events: initial;
-              transition-property: opacity;
-              transition-duration: 0.3s;
-              transition-timing-function: ease-in-out;
+
             }
           }
 
@@ -224,16 +140,7 @@ html.cssgrid, html {
 
           }
           @media only screen and (max-width: 1000px) {
-            width: 100%;
-            .tablink {
-              transform: skew(0deg);
-              width: 100%;
-              text-align: left;
-              box-sizing: border-box;
-              a {
-                transform: skew(0deg);
-              }
-            }
+
           }
         }
 
@@ -249,48 +156,6 @@ html.cssgrid, html {
         //  .tabs-wrap{}
         //}
       }
-      &.blue {
-        padding: 4rem 0;
-        background-color: $brand-blue;
-        h2 {
-          color: $white;
-        }
-        #tabs {
-          .tabsList {
-            .tablink {
-              &.current {
-                background-color: $white;
-                a {
-                  color: $brand-blue;
-                }
-              }
-            }
-            .tabPanel {
-              * {
-                color: $white;
-              }
-              h4 {
-                color: $brand-four;
-              }
-            }
-          }
-        }
-        .line-graphic {
-          right: 0;
-          position: absolute;
-          height: 100%;
-          width: 130px;
-          display: inline-flex;
-          justify-content: flex-start;
-          flex-direction: column;
-          padding-top: 8rem;
-          z-index: 0;
-
-          svg {
-            right: 0;
-          }
-        }
-      }
     }
     .call_to_action {
     }
@@ -302,13 +167,191 @@ html.cssgrid, html {
 
   }
 }
+// END OF GRID LAYOUT
+/*********************************/
+/*********************************/
 
-// Sush getting jiggy in George's code.. lets discuss a plan! post-list being moved into compontents.. this might be the wrong approach! 
 
-.page {
 
+/*********************************/
+/*********************************/
+// DECORATIVE STYLES ONLY
+.home{
+  .hero--home{
+
+  }
+  .tabs{
+    #tabs{
+      .tabsList{
+        .tablink{
+          display: inline-block;
+          list-style: none;
+          margin: 0;
+          text-align: center;
+          cursor: pointer;
+          transform: skew(-30deg);
+          background-color: $brand-three;
+          padding: 1rem 2rem;
+          font-size: $base-font-size;
+          &:hover {
+            background-color: $brand-two;
+          }
+          &.current {
+            background: $brand-four;
+            .icon {
+              transform: rotate(90deg);
+              transition: transform 0.5s;
+            }
+          }
+          a {
+            font-weight: bold;
+            color: $white;
+            transform: skew(30deg);
+            display: inline-block;
+            z-index: 17;
+            position: relative;
+            @media only screen and (max-width: 900px) {
+              padding: 1rem 0.5rem;
+              font-size: $base-font-size / 1.2
+            }
+            @media only screen and (max-width: 1000px) {
+              padding: 0;
+            }
+          }
+          @media only screen and (max-width: 1000px) {
+            display: none;
+          }
+          .icon_wrap_accordian{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 5%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 10px;
+            .icon {
+              color: $brand-one;
+              right: 20px;
+              width: 10px;
+              height: 10px;
+              background-image: url("../assets/images/right_arrow_white.svg");
+              background-size: cover;
+              background-position: center;
+              transition: transform 0.5s;
+              cursor: pointer;
+              align-self: center;
+            }
+            @media only screen and (min-width: 1000px) {
+              display: none;
+            }
+          }
+        }
+        .tabPanel{
+          //display: none;
+          opacity: 0;
+          pointer-events: none;
+          transition-property: opacity;
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in-out;
+          text-align: left;
+          margin-bottom: 1rem;
+          h4 {
+            font-size: 2.7rem;
+            font-weight: 600;
+            color: $brand-four;
+          }
+          p {
+            text-align: left;
+            margin-top: 20px;
+          }
+          .button-primary {
+            margin-top: 1rem;
+          }
+          ol {
+            margin-bottom: 0;
+          }
+
+          @media only screen and (max-width: 1000px) {
+            opacity: 1;
+            pointer-events: initial;
+          }
+          &.current {
+            //display: block;
+            opacity: 1;
+            pointer-events: initial;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+          }
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+          .tablink {
+            transform: skew(0deg);
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+            a {
+              transform: skew(0deg);
+            }
+          }
+        }
+      }
+    }
+    &.blue {
+      padding: 4rem 0;
+      background-color: $brand-blue;
+      h2 {
+        color: $white;
+      }
+      #tabs {
+        .tabsList {
+          .tablink {
+            &.current {
+              background-color: $white;
+              a {
+                color: $brand-blue;
+              }
+            }
+          }
+          .tabPanel {
+            * {
+              color: $white;
+            }
+            h4 {
+              color: $brand-four;
+            }
+          }
+        }
+      }
+      .line-graphic {
+        right: 0;
+        position: absolute;
+        height: 100%;
+        width: 130px;
+        display: inline-flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 8rem;
+        z-index: 0;
+
+        svg {
+          right: 0;
+        }
+      }
+    }
+  }
 }
+// END OF DECORATIVE STYLES ONLY
+/*********************************/
+/*********************************/
 
+
+/*********************************/
+/*********************************/
+// NON_GRID STYLES ONLY
 html.no-cssgrid {
   .home {
     .hero--home {
@@ -331,5 +374,45 @@ html.no-cssgrid {
 
       }
     }
+    .tabs{
+      margin-bottom: 2rem;
+      .sub-heading-two{
+        max-width: 1400px;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: auto;
+        margin-bottom:2rem;
+      }
+      #tabs{
+        width:100%;
+        max-width: 1400px;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: auto;
+        margin-bottom:2rem;
+        .tabsList{
+          .tablink{
+            width:24%;
+            vertical-align: top;
+            display: none;
+          }
+          .tabPanel{
+            opacity: 1;
+          }
+        }
+      }
+      &.blue{
+        #tabs{
+          .tabsList{
+            .tablink{}
+            .tabPanel{
+            }
+          }
+        }
+      }
+    }
   }
 }
+// END NON_GRID STYLES ONLY
+/*********************************/
+/*********************************/
