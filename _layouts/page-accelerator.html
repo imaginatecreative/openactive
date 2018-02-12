@@ -21,10 +21,10 @@ layout: default-accelerator
         <div class="one">
 
             <h3>We want to get people active using data.</h3>
-            <p>That’s why we’ve been working closely with activity providers to open up their opportunity data for
+            <p>For months, we've been working with activity providers to open up their opportunity data for
                 our OpenActive Accelerator. Now it’s over to you. If you’ve got an innovative idea that uses open
-                opportunity data to help people find and take part in physical activities, we want to hear from
-                you.</p>
+                opportunity data to help people find and take part in physical activities, <a href="https://docs.google.com/document/d/1o06BCIxYRc1-7vQy4z6N7RL7ebw5kj8QaAkLb4v-8og/edit" target="_blank">we want to hear from
+                you.</a></p>
             <p>Developments in <strong>data</strong>, social media, VR and AI are having a huge impact
                 on many aspects of people’s
                 lives, removing pain points and creating <strong>better experiences for customers.</strong></p>
@@ -327,37 +327,36 @@ layout: default-accelerator
     <article class="faq-title title-row collapse-bottom invert-3">
         <h2 class="sub-heading-two">More questions?</h2>
         <div class="one">
-            <h4>If you have general queries about the Accelerator have a look through our FAQs</h4>
-        </div>
+      </div>
     </article>
     <article class="faq-snippet invert-3">
         <div class="two">
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
-                {% for post in aboutAccelerator limit:3 %}
-                {% if post.is_featured %}
+                {% for post in aboutAccelerator limit:4 %}
+             
                 <div class=" show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
                         {{post.content}}
                     </div>
                 </div>
-                {% endif %}
+               
                 {% endfor %}
             </div>
         </div>
         <div class="two">
             <div class="news-content">
                 {% assign aboutAccelerator = site.faqs | where: "categories", "OpenActive Accelerator" %}
-                {% for post in aboutAccelerator limit:2 offset:3 %}
-                {% if post.is_featured %}
+                {% for post in aboutAccelerator limit:4 offset:4 %}
+              
                 <div class="show_hide">
                     <h5><span class="brand-five-c">Q:</span> {{ post.title | escape}}</h5>
                     <div class="slidingDiv">
                         {{post.content}}
                     </div>
                 </div>
-                {% endif %}
+           
                 {% endfor %}
             </div>
         </div>
@@ -384,11 +383,6 @@ layout: default-accelerator
         </div>
 
         {% endfor %}
-
-    </article>
-
-    <article class="title-row partners">
-        <h2 class="sub-heading-two">Data providers</h2>
 
         {% assign sortedPosts = site.dataproviders | sort: 'title' %}
         {% for post in sortedPosts %}
