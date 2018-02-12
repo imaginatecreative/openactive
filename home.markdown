@@ -14,6 +14,13 @@ layout: home
 <div class="hero-tab" data-tab="h2"></div>
 <div class="hero-tab" data-tab="h3"></div>
 </nav>
+<figure role="group" aria-labelledby="open-active-video">
+
+<!-- THIS IS THE YOUTUBE EMEBED -->
+<iframe width="560" height="315"  src="https://www.youtube.com/embed/kfVCRaMJarE" allowfullscreen></iframe>
+
+<figcaption id="open-active-video" class="hidden" >{{ post.title | escape }}</figcaption>
+</figure>
 <div class="content">
 
 <!-- THIS IS THE TITLE BLOCK -->
@@ -30,13 +37,7 @@ layout: home
 [How it Works]( {{ site.baseurl }}{% link how-it-works.md %}){: .button-primary}
 
 </div>
-<figure role="group" aria-labelledby="open-active-video">
 
-<!-- THIS IS THE YOUTUBE EMEBED -->
-<iframe width="560" height="315"  src="https://www.youtube.com/embed/kfVCRaMJarE" allowfullscreen></iframe>
-
-<figcaption id="open-active-video" class="hidden" >{{ post.title | escape }}</figcaption>
-</figure>
 </article>
 
 

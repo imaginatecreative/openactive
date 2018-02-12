@@ -951,6 +951,10 @@ article {
 html.no-cssgrid {
 
   article {
+    max-width: 1400px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin: auto;
     @media only screen and (max-width: 900px) {
 
     }
