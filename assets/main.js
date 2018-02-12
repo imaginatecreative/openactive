@@ -1,6 +1,14 @@
 $(document).ready(function () {
     (function ($) {
 
+        // var mentors = $('.post');
+        // mess_content.each(function(){
+        //     if ($(this).text().length > 120) {
+        //         var obrtext = $(this).text().substr(0,120) ;
+        //         $(this).html(obrtext+"<a href='#'>read more</a>") ;
+        //     }
+        // });
+
 
         if ($(".accelerator-template").length > 0) {
 
