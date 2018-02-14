@@ -197,7 +197,7 @@ Open data is data that anyone can access, use or share. Simple as that. When big
 
 Millions find it hard to stay active. OpenActive Accelerator calls for startups to make it easier with digital innovation using open data.
 
-\[Find out more\]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
+[Find out more]( {{ site.baseurl }}{% link accelerator.md %}){: .button-primary}
 
 </div>
 
